@@ -53,7 +53,7 @@ const Footer = () => {
                 <CiLocationOn className="size-8" />
               </div>
               <div>
-                <p className="font-sans text-[14px] tracking-wide text-[#111827] ">Narela road near jhandewala mandir, floor 3 office 34 Narela delhi 110040</p>
+                <p className="font-sans text-[14px] tracking-wide text-[#111827] "> Holambi Kalan near Narela jhandewala mandir, floor 1 office 34 Narela delhi 110082</p>
               </div>
             </div>
             <div className="flex gap-2 items-center pt-1">
@@ -69,7 +69,7 @@ const Footer = () => {
                 <CiPhone className="size-7" />
               </div>
               <div>
-                <p className="font-sans text-[14px] tracking-wide text-[#111827] ">9854578545</p>
+                <p className="font-sans text-[14px] tracking-wide text-[#111827] ">8860829437</p>
               </div>
             </div>
             <div className="mt-2.5 px-[4px]">
