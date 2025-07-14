@@ -7,7 +7,7 @@ import Button from "./Button";
 
 const Navbaar = () => {
   return (
-    <div className="h-16 absolute w-full z-[999] border-b border-[#f8f3f3]">
+    <div className="h-16 absolute w-full z-[999] border-b border-[#D6D8DE]">
       <div className="h-full container mx-auto px-3 md:px-10 lg:px-20 grid grid-cols-4 py-2 lg:py-2 text-white items-center">
         <div className="col-span-2 sm:col-span-1  flex items-center gap-0.5">
           <div>
@@ -24,7 +24,7 @@ const Navbaar = () => {
           <ul className="flex gap-3 md:gap-4 justify-center text-[#6D6D6E] font-sans text-[18px]">
             {
               NAVBAR_TABS.map(({ PATH, TABNAME }) => (
-                <li >{TABNAME}</li>
+                <li key={TABNAME}>{TABNAME}</li>
               ))
             }
 

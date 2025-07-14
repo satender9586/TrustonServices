@@ -17,10 +17,10 @@ const Footer = () => {
           {
             Array.from({ length: 4 }).map(() => (
               <div>
-                <h1 className="font-serif text-[15px] tracking-wide font-bold text-[#1F2937] mb-1">
+                <h1 className="font-serif text-[16px] tracking-wide font-bold text-[#1F2937] mb-1">
                   Products
                 </h1>
-                <ul className="space-y-[1px]">
+                <ul className="space-y-[6px]">
                   <li className="font-sans text-[13px] tracking-wide text-[#111827] ">
                     Air Conditioner
                   </li>
@@ -45,8 +45,8 @@ const Footer = () => {
           }
 
           <div className="col-span-2 border-l border-[#D6D8DE] pl-7">
-            <h1 className="font-serif text-[15px] tracking-wide font-bold text-[#1F2937] mb-1">
-              Contact
+            <h1 className="font-serif text-[16px] tracking-wide font-bold text-[#1F2937] mb-1">
+              We’re Here to Help — Get in Touch!
             </h1>
             <div className="flex gap-1.5 ">
               <div className="mt-0.5">
@@ -76,8 +76,8 @@ const Footer = () => {
               <Button variant="outline" className="font-sans text-[14px] tracking-wide">Book a Service </Button>
             </div>
             <div className="">
-              <h1 className="font-serif text-[15px] tracking-wide font-bold text-[#1F2937] mt-2">
-                Follow
+              <h1 className="font-serif text-[16px] tracking-wide font-bold text-[#1F2937] mt-2">
+                Stay Connected
               </h1>
               <div className="flex gap-4 py-2 text-2xl">
                 <SlSocialFacebook />
@@ -100,11 +100,11 @@ const Footer = () => {
               <p className="text-[10px] text-[#111828] font-semibold leading-[10px]">Happy customers, happy us!</p>
             </div>
           </div>
-          <div className="col-span-3 flex justify-between items-center font-sans text-[15px] text-[#8a8b8c]">
+          <div className="col-span-3 flex tracking-wide justify-between items-center font-sans text-[15px] ">
             <h1>Privacy Policy</h1>
             <h1>Terms of Use</h1>
             <h1>Legal</h1>
-            <h1>© 2021 All Rights Reserved</h1>
+            <h1 className="text-[#8a8b8c]">© 2021 All Rights Reserved</h1>
           </div>
         
           
