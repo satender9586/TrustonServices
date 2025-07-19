@@ -10,6 +10,8 @@ const ServiceItemCard: React.FC<ServiceCardProps> = ({ itemUrl, itemName, itemDe
           alt="service-image"
           src={itemUrl}
           className="object-cover max-w-sm max-h-[250px]"
+          layout="responsive"
+          loading="lazy"
         />
       </div>
       <div className="p-3">

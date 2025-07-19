@@ -26,6 +26,8 @@ const Header = () => {
               src={HeaderLogo}
               alt="Chat illustration"
               className="object-cover max-w-full h-auto"
+               layout="responsive"
+             loading="lazy"
             />
           </div>
         </div>

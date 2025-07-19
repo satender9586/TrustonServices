@@ -19,6 +19,7 @@ export interface WhyChooseUsCrauselProps {
 }
 
 
+
 export interface CompanyLovesItem {
   imgs: StaticImageData;
   title: string;
