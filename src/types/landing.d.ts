@@ -13,3 +13,17 @@ export interface WhyChooseUsItem {
   title: string;
   desc: string;
 }
+
+export interface WhyChooseUsCrauselProps {
+    data: WhyChooseUsItem[];
+}
+
+
+export interface CompanyLovesItem {
+  imgs: StaticImageData;
+  title: string;
+}
+
+export interface CompaniesLovesProps {
+  data: CompanyLovesItem[];
+}

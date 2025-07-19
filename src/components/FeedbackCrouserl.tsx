@@ -1,20 +1,15 @@
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, } from "@/components/ui/carousel"
-import { WhyChooseUsItem } from '@/types/landing';
+import { WhyChooseUsCrauselProps } from '@/types/landing';
 import { FaQuoteLeft } from "react-icons/fa6";
 import { IoIosStar } from "react-icons/io";
 
 
-interface WhyChooseUsCrauselProps {
-    data: WhyChooseUsItem[];
-}
 
 
 const FeedbackCrouserl: React.FC<WhyChooseUsCrauselProps> = ({ data }) => {
     return (
         <>
-            <Carousel opts={{
-                align: "start",
-            }}   >
+            <Carousel opts={{align: "start"}}>
                 <CarouselContent className="gap-4">
                     {
                         Array.from({length:10}).map((_, index) => (

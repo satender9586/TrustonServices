@@ -1,5 +1,11 @@
 import { GrUserManager } from "react-icons/gr";
-import { WhyChooseUsItem } from "@/types/landing";
+import { WhyChooseUsItem,CompanyLovesItem } from "@/types/landing";
+import lgImg from "../assests/lg.png"
+import panasonicImg from "../assests/panasonic.png"
+import daikinImg from "../assests/daikin.png"
+import godrejImg from "../assests/godrej.png"
+import wirepoolImg from "../assests/wirepool.png"
+import samasung from "../assests/samsung.png"
 
 
 
@@ -36,3 +42,29 @@ export const whyChooseUsData: WhyChooseUsItem[] = [
   }
 ];
 
+export const companiesLovesData: CompanyLovesItem[] = [
+  {
+    imgs :samasung,
+    title :"Samsung"
+  },
+  {
+    imgs :godrejImg,
+    title :"Godrej"
+  },
+  {
+    imgs :panasonicImg,
+    title :"Panasonic"
+  },
+  {
+    imgs :lgImg,
+    title :"LG"
+  },
+  {
+    imgs :daikinImg,
+    title :"Daikin"
+  },
+  {
+    imgs :wirepoolImg,
+    title :"Wirepool"
+  },
+]

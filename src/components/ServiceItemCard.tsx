@@ -9,7 +9,7 @@ const ServiceItemCard: React.FC<ServiceCardProps> = ({ itemUrl, itemName, itemDe
         <Image
           alt="service-image"
           src={itemUrl}
-          className="object-contain max-w-sm max-h-[250px]"
+          className="object-cover max-w-sm max-h-[250px]"
         />
       </div>
       <div className="p-3">
