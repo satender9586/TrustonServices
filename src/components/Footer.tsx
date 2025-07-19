@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <header className="relative z-0 overflow-hidden bg-[#E6F5FB] py-4">
       <div className="container mx-auto px-3 md:px-10 lg:px-20 pb-4 ">
-        <div className="grid grid-cols-6 border-b border-[#D6D8DE] py-4">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-6 border-b border-[#D6D8DE] py-4">
           {
             Array.from({ length: 4 }).map(() => (
               <div>
@@ -43,6 +43,9 @@ const Footer = () => {
               </div>
             ))
           }
+
+
+
 
           <div className="col-span-2 border-l border-[#D6D8DE] pl-7">
             <h1 className="font-serif text-[16px] tracking-wide font-bold text-[#1F2937] mb-1">
@@ -88,7 +91,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-6 gap-3 py-1 border-b border-[#D6D8DE]">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-3 py-1 border-b border-[#D6D8DE]">
           <div className="col-span-1  flex items-center gap-0.5">
             <div>
               <Image src={Logo} alt="logo" className="object-cover w-10 h-auto" />

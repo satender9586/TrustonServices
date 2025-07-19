@@ -12,11 +12,11 @@ const AboutUs = () => {
     return (
         <div>
             <div className=' container mx-auto px-3 md:px-10 lg:px-20 pb-4'>
-                <div className='grid grid-cols-2 gap-5 mt-3'>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-5 mt-3'>
                     <div>
                         <Image src={technicianImg} alt='technican' className='w-full h-full' />
                     </div>
-                    <div className=''>
+                    <div>
                         <h1 className=" text-2xl sm:text-2xl font-serif font-extrabold text-[#AF0D5A] pb-2 ">
                             Who we are
                         </h1>

@@ -12,7 +12,7 @@ const BrandsCrouser: React.FC<CompaniesLovesProps> = ({ data }) => {
                     {data.map((item, index) => (
                         <CarouselItem
                             key={index}
-                            className="md:basis-1/2 lg:basis-1/4 border max-w-sm p-4 bg-white border-gray-200 rounded-sm shadow dark:bg-gray-800 dark:border-gray-700"
+                            className="basis-1/1 md:basis-1/2 lg:basis-1/4 border max-w-sm p-4 bg-white border-gray-200 rounded-sm shadow dark:bg-gray-800 dark:border-gray-700"
                         >
                             <div className="flex flex-col items-center justify-center text-center">
                                 <Image src={item.imgs} alt={item.title} className="w-full h-20 object-contain" />

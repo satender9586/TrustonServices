@@ -13,7 +13,7 @@ const FeedbackCrouserl: React.FC<WhyChooseUsCrauselProps> = ({ data }) => {
                 <CarouselContent className="gap-4">
                     {
                         Array.from({length:10}).map((_, index) => (
-                            <CarouselItem key={index} className=' md:basis-1/2 lg:basis-1/3 border  max-w-sm p-4  bg-white  border-gray-200 rounded-sm shadow dark:bg-gray-800 dark:border-gray-700'>
+                            <CarouselItem key={index} className='basis-1/1 md:basis-1/2 lg:basis-1/3 border  max-w-sm p-4  bg-white  border-gray-200 rounded-sm shadow dark:bg-gray-800 dark:border-gray-700'>
                                 <div className="grid grid-cols-2">
                                     <div>
                                         <FaQuoteLeft className="size-9 text-[#c0c4cc]" />
