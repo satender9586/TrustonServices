@@ -1,0 +1,38 @@
+import { GrUserManager } from "react-icons/gr";
+import { WhyChooseUsItem } from "@/types/landing";
+
+
+
+export const whyChooseUsData: WhyChooseUsItem[] = [
+  {
+    icon: GrUserManager,
+    title: "Expert Technicians",
+    desc: "Certified professionals with deep technical expertise."
+  },
+  {
+    icon: GrUserManager,
+    title: "5+ Years of Experience",
+    desc: "Trusted by thousands across Delhi NCR since 2019."
+  },
+  {
+    icon: GrUserManager,
+    title: "Quick Response Time",
+    desc: "Fast and on-time service right at your doorstep."
+  },
+  {
+    icon: GrUserManager,
+    title: "Customer-Centric Approach",
+    desc: "We prioritize your satisfaction in every service we provide."
+  },
+  {
+    icon: GrUserManager,
+    title: "Affordable Pricing",
+    desc: "High-quality service without breaking your budget."
+  },
+  {
+    icon: GrUserManager,
+    title: "Complete Home Solutions",
+    desc: "One-stop repair services for ACs, washing machines, and more."
+  }
+];
+

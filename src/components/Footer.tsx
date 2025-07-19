@@ -11,32 +11,32 @@ import Logo from "../assests/Logo2.png"
 
 const Footer = () => {
   return (
-    <header className="relative z-0 overflow-hidden ">
+    <header className="relative z-0 overflow-hidden bg-[#E6F5FB] py-4">
       <div className="container mx-auto px-3 md:px-10 lg:px-20 pb-4 ">
         <div className="grid grid-cols-6 border-b border-[#D6D8DE] py-4">
           {
             Array.from({ length: 4 }).map(() => (
               <div>
-                <h1 className="font-serif text-[16px] tracking-wide font-bold text-[#1F2937] mb-1">
+                <h1 className="font-serif text-[16px] tracking-[1px] font-bold text-[#1F2937] mb-1">
                   Products
                 </h1>
                 <ul className="space-y-[6px]">
-                  <li className="font-sans text-[13px] tracking-wide text-[#111827] ">
+                  <li className="font-sans text-[13px] tracking-wide text-[#949494] ">
                     Air Conditioner
                   </li>
-                  <li className="font-sans text-[13px] tracking-wide text-[#111827] ">
+                  <li className="font-sans text-[13px] tracking-wide text-[#949494] ">
                     Washing Machine
                   </li>
-                  <li className="font-sans text-[13px] tracking-wide text-[#111827] ">
+                  <li className="font-sans text-[13px] tracking-wide text-[#949494] ">
                     Refrigerator
                   </li>
-                  <li className="font-sans text-[13px] tracking-wide text-[#111827] ">
+                  <li className="font-sans text-[13px] tracking-wide text-[#949494] ">
                     Microwave Oven
                   </li>
-                  <li className="font-sans text-[13px] tracking-wide text-[#111827] ">
+                  <li className="font-sans text-[13px] tracking-wide text-[#949494] ">
                     Water Purifier
                   </li>
-                  <li className="font-sans text-[13px] tracking-wide text-[#111827] ">
+                  <li className="font-sans text-[13px] tracking-wide text-[#949494] ">
                     Dishwasher
                   </li>
                 </ul>
@@ -53,7 +53,7 @@ const Footer = () => {
                 <CiLocationOn className="size-8" />
               </div>
               <div>
-                <p className="font-sans text-[14px] tracking-wide text-[#111827] "> Holambi Kalan near Narela jhandewala mandir, floor 1 office 34 Narela delhi 110082</p>
+                <p className="font-sans text-[14px] tracking-wide text-[#949494] "> Holambi Kalan near Narela jhandewala mandir, floor 1 office 34 Narela delhi 110082</p>
               </div>
             </div>
             <div className="flex gap-2 items-center pt-1">
@@ -61,7 +61,7 @@ const Footer = () => {
                 <CiMail className="size-7" />
               </div>
               <div>
-                <p className="font-sans text-[14px] tracking-wide text-[#111827] ">support@trustonservices.com</p>
+                <p className="font-sans text-[14px] tracking-wide text-[#949494] ">support@trustonservices.com</p>
               </div>
             </div>
             <div className="flex pt-1.5 gap-2 items-center ">
@@ -69,7 +69,7 @@ const Footer = () => {
                 <CiPhone className="size-7" />
               </div>
               <div>
-                <p className="font-sans text-[14px] tracking-wide text-[#111827] ">8860829437</p>
+                <p className="font-sans text-[14px] tracking-wide text-[#949494] ">8860829437</p>
               </div>
             </div>
             <div className="mt-2.5 px-[4px]">

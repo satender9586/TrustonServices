@@ -1,5 +1,9 @@
 import { StaticImageData } from "next/image";
-import ACIMG from "../assests/ac.png";
+import ACIMG from "../assests/actechnicial.jpg";
+import WASHINGIMG from "../assests/washing.jpg"
+import PLUMBIMG from "../assests/plumber.jpg"
+import ELECTIMG from "../assests/electrician.jpg"
+
 
 interface Service {
   itemname: string;
@@ -11,26 +15,21 @@ export const ServicesItems: Service[] = [
   {
     itemname: "Air Conditioning",
     itemUrl: ACIMG,
-    itemDesc: "AC installation, servicing, and repair."
+    itemDesc: "Reliable AC installation, repair, and seasonal servicing by certified experts."
   },
   {
-    itemname: "Home Cleaning",
-    itemUrl: ACIMG,
-    itemDesc: "Deep cleaning services for your home."
-  },
-  {
-    itemname: "Plumbing",
-    itemUrl: ACIMG,
-    itemDesc: "Expert plumbing services for leaks and repairs."
-  },
-  {
-    itemname: "Home Cleaning",
-    itemUrl: ACIMG,
-    itemDesc: "Deep cleaning services for your home."
+    itemname: "Washing Machine",
+    itemUrl: WASHINGIMG,
+    itemDesc: "Professional washing machine repair and maintenance for all major brands."
   },
   {
     itemname: "Plumbing",
-    itemUrl: ACIMG,
-    itemDesc: "Expert plumbing services for leaks and repairs."
+    itemUrl: PLUMBIMG,
+    itemDesc: "From leaky taps to pipe fittings — fast and affordable plumbing solutions."
+  },
+  {
+    itemname: "Electrician",
+    itemUrl: ELECTIMG,
+    itemDesc: "Safe and efficient electrical repairs, fittings, and troubleshooting services."
   }
 ];
