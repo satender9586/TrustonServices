@@ -8,14 +8,12 @@ import AboutUs from "@/components/AboutUs"
 const Landing = () => {
   
   return (
-    <>
-    <Layout>
+      <Layout>
       <Header/>
       <Services/>
       <WhyChoose/>
       <AboutUs/>
     </Layout>
-    </>
   )
 }
 
