@@ -14,7 +14,7 @@ const WhyChoose = () => {
                         At <span className="text-[#AF0D5A] font-semibold">Trust On Services</span>, we bring over 5 years of experience in fast, reliable AC, washing machine, and fridge repairs across Delhi NCR.
                     </p>
                 </div>
-                <div className=''>
+                <div>
                     <WhyChooseUsCrausel data = {whyChooseUsData} />
                 </div>
             </div>

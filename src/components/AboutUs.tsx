@@ -6,6 +6,7 @@ import { whyChooseUsData } from '@/constants/whyChooseUsFakeData';
 import { Button } from './ui/button';
 import BrandsCrouser from './BrandsCrouser';
 import { companiesLovesData } from '@/constants/whyChooseUsFakeData';
+import EnqueryPopUp from './EnqueryPopUp';
 
 const AboutUs = () => {
     return (
@@ -47,9 +48,12 @@ const AboutUs = () => {
 
                             {/* CTA Button */}
                             <div className="flex flex-wrap items-center gap-4">
-                                <button className="px-6 py-3 bg-[#AF0D5A] hover:bg-[#92144b] transition-colors text-white rounded-full shadow-lg text-base font-semibold tracking-wide">
-                                    Book a Service
-                                </button>
+                                <EnqueryPopUp>
+                                    <button className="px-6 py-3 bg-[#AF0D5A] hover:bg-[#92144b] transition-colors text-white rounded-full shadow-lg text-base font-semibold tracking-wide">
+                                        Book a Service
+                                    </button>
+                                </EnqueryPopUp>
+
 
                                 {/* Optional: Placeholder for logos or trust indicators */}
                                 <div className="text-sm text-[#999]">Certified • Fast • Reliable</div>

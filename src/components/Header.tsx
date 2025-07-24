@@ -2,13 +2,14 @@ import { FaArrowRight } from "react-icons/fa";
 import { FaStar } from "react-icons/fa6";
 import Image from "next/image";
 import HeaderLogo from "../assests/headerImg.png";
+import EnqueryPopUp from "../components/EnqueryPopUp"
 
 const Header = () => {
   return (
     <header className="bg-white pt-24 pb-16 md:pb-24">
       <div className="container mx-auto px-4 md:px-10 lg:px-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          
+
           {/* Left Content */}
           <div>
             <h1 className="text-[36px] sm:text-[44px] lg:text-[50px] leading-tight font-extrabold font-serif text-[#AF0D5A] mb-4">
@@ -32,10 +33,13 @@ const Header = () => {
                 Serving Delhi NCR since 2016
               </span>
             </div>
+            {/* Enquery form button */}
+            <EnqueryPopUp>
+              <button className="bg-[#AF0D5A] hover:bg-[#9a0c4b] text-white font-semibold px-6 py-3 rounded-full flex items-center gap-2 shadow-md transition-all">
+                Book a Service <FaArrowRight />
+              </button>
+            </EnqueryPopUp>
 
-            <button className="bg-[#AF0D5A] hover:bg-[#9a0c4b] text-white font-semibold px-6 py-3 rounded-full flex items-center gap-2 shadow-md transition-all">
-              Book a Service <FaArrowRight />
-            </button>
           </div>
 
           {/* Right Image */}
