@@ -1,120 +1,89 @@
-import { CiLocationOn } from "react-icons/ci";
-import { CiMail } from "react-icons/ci";
-import { Button } from "./ui/button";
-import { CiPhone } from "react-icons/ci";
+import { CiLocationOn, CiMail, CiPhone, CiYoutube } from "react-icons/ci";
 import { SlSocialFacebook } from "react-icons/sl";
-import { CiYoutube } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io5";
+import { Button } from "./ui/button";
 import Image from "next/image";
-import Logo from "../assests/Logo2.png"
+import Logo from "../assests/Logo2.png";
 
 const Footer = () => {
   return (
-    <header className="relative z-0 overflow-hidden bg-[#E6F5FB] py-4">
-      <div className="container mx-auto px-3 md:px-10 lg:px-20 pb-4 ">
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-6 border-b border-[#D6D8DE] py-4">
-          {
-            Array.from({ length: 4 }).map(() => (
-              <div>
-                <h1 className="font-serif text-[16px] tracking-[1px] font-bold text-[#1F2937] mb-1">
-                  Products
-                </h1>
-                <ul className="space-y-[6px]">
-                  <li className="font-sans text-[13px] tracking-wide text-[#949494] ">
-                    Air Conditioner
-                  </li>
-                  <li className="font-sans text-[13px] tracking-wide text-[#949494] ">
-                    Washing Machine
-                  </li>
-                  <li className="font-sans text-[13px] tracking-wide text-[#949494] ">
-                    Refrigerator
-                  </li>
-                  <li className="font-sans text-[13px] tracking-wide text-[#949494] ">
-                    Microwave Oven
-                  </li>
-                  <li className="font-sans text-[13px] tracking-wide text-[#949494] ">
-                    Water Purifier
-                  </li>
-                  <li className="font-sans text-[13px] tracking-wide text-[#949494] ">
-                    Dishwasher
-                  </li>
-                </ul>
-              </div>
-            ))
-          }
+    <footer className="bg-[#f8fbfc] text-[#444] pt-8">
+      <div className="container mx-auto px-4 md:px-10 lg:px-20">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 pb-8 border-b border-[#D6D8DE]">
+          {Array.from({ length: 3 }).map((_, i) => (
+            <div key={i}>
+              <h2 className="text-[#111] font-bold mb-3 text-[16px] font-serif">Products</h2>
+              <ul className="space-y-2 text-[14px] text-[#666]">
+                <li>Air Conditioner</li>
+                <li>Washing Machine</li>
+                <li>Refrigerator</li>
+                <li>Microwave Oven</li>
+                <li>Water Purifier</li>
+                <li>Dishwasher</li>
+              </ul>
+            </div>
+          ))}
 
-
-
-
-          <div className="col-span-2 border-l border-[#D6D8DE] pl-7">
-            <h1 className="font-serif text-[16px] tracking-wide font-bold text-[#1F2937] mb-1">
+          {/* Contact Info */}
+          <div className="lg:col-span-3">
+            <h2 className="text-[#111] font-bold mb-3 text-[16px] font-serif">
               We’re Here to Help — Get in Touch!
-            </h1>
-            <div className="flex gap-1.5 ">
-              <div className="mt-0.5">
-                <CiLocationOn className="size-8" />
+            </h2>
+            <div className="space-y-2 text-[14px] text-[#666]">
+              <div className="flex items-start gap-2">
+                <CiLocationOn className="text-[20px] mt-0.5 text-[#AF0D5A]" />
+                <p>Holambi Kalan Metro Vihar, Near Alipur, Delhi 110082</p>
               </div>
-              <div>
-                <p className="font-sans text-[14px] tracking-wide text-[#949494] "> Holambi Kalan near Narela jhandewala mandir, floor 1 office 34 Narela delhi 110082</p>
+              <div className="flex items-start gap-2">
+                <CiMail className="text-[20px] mt-0.5 text-[#AF0D5A]" />
+                <p>support@trustonservices.com</p>
               </div>
-            </div>
-            <div className="flex gap-2 items-center pt-1">
-              <div className="mt-0.5 ml-0.5">
-                <CiMail className="size-7" />
+              <div className="flex items-start gap-2">
+                <CiPhone className="text-[20px] mt-0.5 text-[#AF0D5A]" />
+                <p>+91 88608 29437</p>
               </div>
-              <div>
-                <p className="font-sans text-[14px] tracking-wide text-[#949494] ">support@trustonservices.com</p>
-              </div>
-            </div>
-            <div className="flex pt-1.5 gap-2 items-center ">
-              <div className=" ml-0.5">
-                <CiPhone className="size-7" />
-              </div>
-              <div>
-                <p className="font-sans text-[14px] tracking-wide text-[#949494] ">8860829437</p>
+              <div className="pt-2">
+                <Button variant="outline" className="text-sm border-[#AF0D5A] text-[#AF0D5A] hover:bg-[#AF0D5A]/10">
+                  Book a Service
+                </Button>
               </div>
             </div>
-            <div className="mt-2.5 px-[4px]">
-              <Button variant="outline" className="font-sans text-[14px] tracking-wide">Book a Service </Button>
-            </div>
-            <div className="">
-              <h1 className="font-serif text-[16px] tracking-wide font-bold text-[#1F2937] mt-2">
-                Stay Connected
-              </h1>
-              <div className="flex gap-4 py-2 text-2xl">
-                <SlSocialFacebook />
-                <CiYoutube />
-                <FaInstagram />
-                <IoLogoWhatsapp />
+
+            {/* Social */}
+            <div className="mt-6">
+              <h2 className="text-[#111] font-bold text-[16px] font-serif mb-2">Stay Connected</h2>
+              <div className="flex gap-4 text-[20px] text-[#AF0D5A]">
+                <SlSocialFacebook className="hover:text-[#4267B2] cursor-pointer" />
+                <CiYoutube className="hover:text-[#FF0000] cursor-pointer" />
+                <FaInstagram className="hover:text-[#C13584] cursor-pointer" />
+                <IoLogoWhatsapp className="hover:text-[#25D366] cursor-pointer" />
               </div>
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-3 py-1 border-b border-[#D6D8DE]">
-          <div className="col-span-1  flex items-center gap-0.5">
+
+        {/* Footer Bottom */}
+        <div className="flex flex-col md:flex-row md:justify-between items-center gap-3 py-4 text-[13px] text-[#888]">
+          <div className="flex items-center gap-2">
+            <Image src={Logo} alt="logo" className="w-8 h-auto object-contain" />
             <div>
-              <Image src={Logo} alt="logo" className="object-cover w-10 h-auto" />
-            </div>
-            <div className="-mt-1.5">
-              <h1 className=" font-semibold  text-[#111828] text-[18px]">
+              <h1 className="text-[#111828] text-[16px] font-semibold">
                 TrustOn<span className="text-[#AF0D5A]">Services</span>
               </h1>
-              <p className="text-[10px] text-[#111828] font-semibold leading-[10px]">Happy customers, happy us!</p>
+              <p className="text-[11px] leading-3">Happy customers, happy us!</p>
             </div>
           </div>
-          <div className="col-span-3 flex tracking-wide justify-between items-center font-sans text-[15px] ">
-            <h1>Privacy Policy</h1>
-            <h1>Terms of Use</h1>
-            <h1>Legal</h1>
-            <h1 className="text-[#8a8b8c]">© 2021 All Rights Reserved</h1>
+          <div className="flex flex-wrap justify-center gap-4 text-[13px] text-[#666] mt-2 md:mt-0">
+            <p className="hover:text-[#AF0D5A] cursor-pointer">Privacy Policy</p>
+            <p className="hover:text-[#AF0D5A] cursor-pointer">Terms of Use</p>
+            <p className="hover:text-[#AF0D5A] cursor-pointer">Legal</p>
+            <p className="text-[#aaa]">© 2021 All Rights Reserved</p>
           </div>
-        
-          
         </div>
       </div>
-    </header>
-  )
-}
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

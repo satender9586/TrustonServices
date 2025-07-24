@@ -10,7 +10,7 @@ const Services = () => {
                     <h1 className="text-3xl sm:text-4xl font-serif font-extrabold text-[#AF0D5A] mb-4">
                         Trusted Home Services for Delhi NCR
                     </h1>
-                    <p className="text-lg  text-[#949494] font-sans">
+                    <p className="text-md  text-[#949494] font-sans">
                         Welcome to <span className=" text-[#AF0D5A]">Trust On Services</span> —
                         your one-stop solution for reliable AC installation, washing machine repair, and refrigerator servicing
                         across Delhi NCR. From residential flats to commercial spaces, we bring expert, on-time
