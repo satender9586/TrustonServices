@@ -11,7 +11,6 @@ import EnqueryPopUp from './EnqueryPopUp';
 const AboutUs = () => {
     return (
         <div className="w-full">
-
             {/* WHO WE ARE Section */}
             <section className="relative bg-gradient-to-br from-[#ffffff] via-[#fff3f8] to-[#fdf4f8] py-6 md:py-16 overflow-hidden">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-20">

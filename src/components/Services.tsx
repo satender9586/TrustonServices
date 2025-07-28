@@ -4,7 +4,7 @@ import ServiceItemCard from "./ServiceItemCard";
 
 const Services = () => {
   return (
-    <section className="bg-white py-0 sm:py-16">
+    <section className="bg-white py-0 sm:py-16 md:py-0 ">
       <div className="container mx-auto px-4 sm:px-6 lg:px-20">
         
         {/* Section Heading */}

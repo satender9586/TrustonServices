@@ -27,7 +27,7 @@ const EnqueryPopUp = ({children}) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setOpen(true);
+      // setOpen(true);
     }, 2 * 60 * 1000);
 
     return () => clearInterval(interval);

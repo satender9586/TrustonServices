@@ -4,11 +4,11 @@ import { WhyChooseUsCrausel } from './WhyChooseUsCrausel';
 
 const WhyChoose = () => {
   return (
-    <section className="bg-white pt-4 sm:py-14">
+    <section className="bg-white pt-4 sm:py-14 md:py-0 lg:pt-12 lg:pb-2 ">
       <div className="container mx-auto px-4 sm:px-6 lg:px-20">
 
         {/* Heading and Description */}
-        <div className="max-w-2xl mx-auto text-center mb:4 sm:mb-8">
+        <div className="max-w-2xl mx-auto text-center mb:4 sm:mb-8 ">
           <h2 className="text-3xl sm:text-4xl font-serif font-extrabold text-[#AF0D5A] mb-4">
             Why Choose Us
           </h2>
