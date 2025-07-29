@@ -2,51 +2,20 @@ import React from "react";
 import Layout from "@/components/Layout";
 import Image from "next/image";
 import HeaderLogo from "../../assests/headerImg.png";
+import { ownerInfo, teamMembers } from "@/constants/usersInfo";
 import {
   FaUsers,
   FaHandshake,
   FaStar,
   FaClock,
   FaMapMarkerAlt,
-  FaLinkedin,
-  FaFacebook,
-  FaTwitter,
-  FaPhone,
 } from "react-icons/fa";
-
-const teamMembers = [
-  {
-    name: "Ravi Sharma",
-    role: "Electrician",
-    experience: "5+ years",
-    desc: "Expert in electrical wiring, inverter installation, and safety checks.",
-    img: "/images/aboutservice.jpg",
-    contact: {
-      linkedin: "#",
-      facebook: "#",
-      twitter: "#",
-      phone: "tel:+919876543210",
-    },
-  },
-  {
-    name: "Pooja Verma",
-    role: "Salon Expert",
-    experience: "4+ years",
-    desc: "Professional in bridal makeup, hair styling, and home salon services.",
-    img: "/images/aboutservice.jpg",
-    contact: {
-      linkedin: "#",
-      facebook: "#",
-      twitter: "#",
-      phone: "tel:+919812345678",
-    },
-  },
-];
 
 type HighlightProps = {
   icon: React.ReactNode;
   text: string;
 };
+
 const Highlight = ({ icon, text }: HighlightProps) => (
   <div className="flex items-center space-x-3 bg-[#fff7fa] p-5  rounded-lg shadow-md">
     <div className="text-[#AF0D5A] text-xl">{icon}</div>
@@ -62,7 +31,8 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-3xl font-serif font-semibold bg-gradient-to-r from-[#AF0D5A] to-pink-500 bg-clip-text text-transparent mb-6 leading-tight">
-                About Us<br />
+                About Us
+                <br />
                 <span className="text-[50px] font-bold text-[#111828]">
                   TrustOn<span className="text-[#AF0D5A]">Services</span>
                 </span>
@@ -106,7 +76,6 @@ const About = () => {
                   priority
                 />
               </div>
-
             </div>
           </div>
         </div>
@@ -118,22 +87,18 @@ const About = () => {
             Meet Our Founder
           </h2>
           <Image
-            src="/images/aboutservice.jpg"
-            alt="Rahul Verma"
-            width={150}
-            height={150}
-            className="rounded-full mx-auto border-4 border-[#AF0D5A] shadow-lg object-cover"
+            src={ownerInfo.profile}
+            alt={ownerInfo.name}
+            width={170}
+            height={170}
+            className="rounded-full mx-auto border-4 border-[#AF0D5A] shadow-lg object-center"
           />
           <h3 className="text-2xl font-serif  text-gray-800 mt-4">
-            Rahul Verma
+            {ownerInfo.name}
           </h3>
-          <p className="text-gray-600 font-serif  text-sm">
-            Founder & CEO, TrustOnServices
-          </p>
+          <p className="text-gray-600 font-serif  text-sm">{ownerInfo.desc}</p>
           <p className="mt-4 font-serif  text-gray-700 text-md leading-relaxed">
-            With over 6 years of experience in the home service industry, Rahul
-            has built a platform you can rely on — from plumbing to grooming, he
-            ensures service quality and trust come first.
+            {ownerInfo.extrDesc}
           </p>
         </div>
       </section>
@@ -146,8 +111,9 @@ const About = () => {
 
           <div className="max-w-2xl mx-auto mb-12">
             <p className="text-gray-600 text-base sm:text-lg">
-              Meet the passionate professionals who bring dedication, skill, and excellence to every project.
-              Our team is committed to delivering outstanding service .
+              Meet the passionate professionals who bring dedication, skill, and
+              excellence to every project. Our team is committed to delivering
+              outstanding service .
             </p>
           </div>
 
@@ -158,7 +124,7 @@ const About = () => {
                 className="p-4 bg-white border border-gray-100 rounded-[24px] shadow-md hover:shadow-lg hover:-translate-y-2 hover:border-[#AF0D5A] transition-all duration-300  dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center"
               >
                 <Image
-                  src={HeaderLogo}
+                  src={member.profile}
                   alt={member.name}
                   priority
                   className="w-full h-45 rounded-xl object-cover mb-2"
@@ -180,8 +146,6 @@ const About = () => {
           </div>
         </div>
       </section>
-
-
 
       <section className="py-16 bg-[#F7F7F7]">
         <div className="max-w-6xl mx-auto px-4 text-center ">

@@ -23,8 +23,8 @@ export const NAVBAR_TABS = [
         PATH: "/contact"
     },
     {
-        TABNAME: "Testimonials",
-        PATH: "/testimonials"
+        TABNAME: "Feedback",
+        PATH: "/feedback"
     },
 ]
 

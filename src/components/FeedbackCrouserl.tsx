@@ -1,41 +1,30 @@
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { WhyChooseUsCrauselProps } from '@/types/landing';
-import { FaQuoteLeft } from "react-icons/fa6";
-import { IoIosStar } from "react-icons/io";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { WhyChooseUsCrauselProps } from "@/types/landing";
+import FeedbackCard from "./FeedbackCard";
 
 const FeedbackCrouserl: React.FC<WhyChooseUsCrauselProps> = ({ data }) => {
-    return (
-        <Carousel opts={{ align: "start" }}>
-            <CarouselContent className="gap-4 py-6">
-                {Array.from({ length: 10 }).map((_, index) => (
-                    <CarouselItem
-                        key={index}
-                        className="basis-full md:basis-1/2 lg:basis-1/3 max-w-sm p-6 bg-white border border-gray-100 rounded-[20px] shadow-md hover:shadow-xl hover:-translate-y-2 transition-transform duration-300 dark:bg-gray-800 dark:border-gray-700"
-                    >
-                        <div className="flex justify-between items-start mb-4">
-                            <FaQuoteLeft className="text-3xl text-[#c0c4cc] opacity-80" />
-                            <div className="flex gap-1 text-[#FF7F22] text-xl">
-                                {Array(5).fill(0).map((_, i) => (
-                                    <IoIosStar key={i} />
-                                ))}
-                            </div>
-                        </div>
-
-                        <p className="text-[15.5px] text-gray-600 dark:text-gray-300 leading-relaxed font-sans tracking-tight mb-6">
-                            Years of experience gives us immense confidence in our work and quality. We provide the best repair services for air conditioners, refrigerators, washing machines, and other home appliances.
-                        </p>
-
-                        <div className="border-t border-dashed border-gray-300 dark:border-gray-600 pt-3">
-                            <p className="font-serif text-[17px] font-semibold text-[#AF0D5A] mb-0">Satish Kumar</p>
-                            <p className="text-sm text-[#888]">New Delhi</p>
-                        </div>
-                    </CarouselItem>
-                ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-        </Carousel>
-    );
+  return (
+    <Carousel opts={{ align: "start" }}>
+      <CarouselContent className="gap-4 py-6">
+        {Array.from({ length: 10 }).map((_, index) => (
+          <CarouselItem
+            key={index}
+            className=" basis-full md:basis-1/2 lg:basis-1/3 "
+          >
+            <FeedbackCard />
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel>
+  );
 };
 
 export default FeedbackCrouserl;

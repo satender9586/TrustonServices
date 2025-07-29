@@ -31,5 +31,15 @@ export const ServicesItems: Service[] = [
     itemname: "Electrician",
     itemUrl: ELECTIMG,
     itemDesc: "Safe and efficient electrical repairs, fittings, and troubleshooting services."
+  },
+    {
+    itemname: "Salon & Parlor",
+    itemUrl: ELECTIMG,
+    itemDesc: "Safe and efficient electrical repairs, fittings, and troubleshooting services."
+  },
+    {
+    itemname: "Delivery",
+    itemUrl: ELECTIMG,
+    itemDesc: "Safe and efficient electrical repairs, fittings, and troubleshooting services."
   }
 ];
