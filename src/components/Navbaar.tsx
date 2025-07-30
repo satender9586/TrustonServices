@@ -4,7 +4,6 @@ import { NAVBAR_TABS } from "@/constants/paths";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import Logo from "../assests/Logo2.png";
 import Image from "next/image";
-import Button from "./Button";
 import Link from "next/link";
 
 const Navbaar = () => {
@@ -15,7 +14,6 @@ const Navbaar = () => {
     const handleScroll = () => {
       setHasScrolled(window.scrollY > 10);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -26,36 +24,37 @@ const Navbaar = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-[999] border-b border-[#E5E7EB] bg-white transition-shadow duration-300 ${
+      className={`fixed top-0 left-0 w-full z-[999] border-b border-[#CBE8F6] bg-[#EBF7FD] transition-shadow duration-300 ${
         hasScrolled ? "shadow-md" : ""
       }`}
     >
-      <div className="container mx-auto px-4 md:px-10 lg:px-20 h-16 flex items-center justify-between">
+      <div className="container mx-auto px-4 md:px-10 h-17 flex items-center justify-between">
+        
         {/* Logo */}
         <div className="flex items-center gap-2">
           <Image
             src={Logo}
             alt="TrustOnServices logo"
-            className="w-10 h-auto object-contain"
+            className="w-8 sm:w-10 h-auto object-contain"
           />
           <div className="leading-tight">
-            <h1 className="text-[19px] font-bold text-[#111828]">
+            <h1 className="text-[16px] sm:text-[19px] font-bold text-[#111828]">
               TrustOn<span className="text-[#AF0D5A]">Services</span>
             </h1>
-            <p className="text-[10px] text-[#555] font-medium">
+            <p className="text-[9px] sm:text-[10px] font-serif text-[#555] font-medium">
               Happy customers, happy us!
             </p>
           </div>
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden sm:flex items-center gap-6 text-[#555] text-[16px] font-medium">
+        <nav className="hidden sm:flex items-center gap-6 text-[15px] font-medium">
           {NAVBAR_TABS.map(({ PATH, TABNAME }) => (
-            <Link href={PATH}  key={TABNAME}>
+            <Link href={PATH} key={TABNAME}>
               <li
-                className="list-none hover:text-[#AF0D5A] relative cursor-pointer transition-colors"
+                className="font-serif list-none hover:text-[#AF0D5A] relative cursor-pointer transition-colors"
               >
-                <span className="after:absolute after:content-[''] after:w-0 after:h-[2px] after:left-0 after:-bottom-1 after:bg-[#AF0D5A] hover:after:w-full after:transition-all after:duration-300">
+                <span className="after:absolute tracking-[1.1px] text-md after:content-[''] after:w-0 after:h-[2px] after:left-0 after:-bottom-1 after:bg-[#AF0D5A] hover:after:w-full after:transition-all after:duration-300">
                   {TABNAME}
                 </span>
               </li>
@@ -65,8 +64,12 @@ const Navbaar = () => {
 
         {/* Desktop Buttons */}
         <div className="hidden sm:flex gap-3">
-          <Button>Login</Button>
-          <Button>Sign Up</Button>
+          <button className="px-5 py-1 rounded-full font-serif text-[#AF0D5A] border border-[#AF0D5A] hover:bg-[#AF0D5A] hover:text-white transition-all duration-300">
+            Login
+          </button>
+          <button className="px-5 py-2 rounded-full font-serif bg-gradient-to-r from-[#AF0D5A] to-[#e63e91] text-white shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
+            Sign Up
+          </button>
         </div>
 
         {/* Mobile Menu Icon */}
@@ -79,27 +82,6 @@ const Navbaar = () => {
           </button>
         </div>
       </div>
-
-      {/* Mobile Navigation Dropdown */}
-      {isMobileMenuOpen && (
-        <div className="sm:hidden bg-white px-4 py-4 border-t border-gray-200 shadow-md">
-          <nav className="flex flex-col gap-4 text-[#555] text-[16px] font-medium">
-            {NAVBAR_TABS.map(({ PATH, TABNAME }) => (
-              <span
-                key={TABNAME}
-                className="hover:text-[#AF0D5A] transition-colors cursor-pointer"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {TABNAME}
-              </span>
-            ))}
-          </nav>
-          <div className="mt-4 flex flex-col gap-2">
-            <Button>Login</Button>
-            <Button>Sign Up</Button>
-          </div>
-        </div>
-      )}
     </header>
   );
 };

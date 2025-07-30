@@ -1,37 +1,48 @@
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import { CompaniesLovesProps } from "@/types/landing";
 import Image from "next/image";
 
 const BrandsCrouser: React.FC<CompaniesLovesProps> = ({ data }) => {
-    return (
-        <Carousel opts={{ align: "start" }}>
-            <CarouselContent className="gap-4 py-6">
-                {data.map((item, index) => (
-                    <CarouselItem
-                        key={index}
-                        className="basis-full md:basis-1/2 lg:basis-1/4 max-w-sm px-4 py-6 bg-white rounded-[20px_5px_20px_5px] border border-gray-200 shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-[1.03] hover:border-[#AF0D5A] dark:bg-gray-800 dark:border-gray-700"
-                    >
-                        <div className="flex flex-col items-center justify-center text-center space-y-4">
-                            <div className="bg-[#f4f4f4] p-4 rounded-full shadow-inner hover:scale-110 transition-transform duration-300 ease-in-out">
-                                <Image
-                                    src={item.imgs}
-                                    alt={item.title}
-                                    className="w-[80px] h-[80px] object-contain"
-                                    width={80}
-                                    height={80}
-                                />
-                            </div>
-                            <h3 className="text-[17px] font-semibold text-gray-800 dark:text-white hover:text-[#AF0D5A] transition-colors duration-200 tracking-wide">
-                                {item.title}
-                            </h3>
-                        </div>
-                    </CarouselItem>
-                ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-        </Carousel>
-    );
+  return (
+    <Carousel opts={{ align: "start", loop: true }}>
+      <CarouselContent className="gap-2 py-4">
+        {data.map((item, index) => (
+          <CarouselItem
+            key={index}
+            className="basis-1/2 sm:basis-1/3 lg:basis-1/5 flex justify-center"
+          >
+            <div className="w-full max-w-[200px] bg-white p-6 rounded-2xl shadow-md hover:shadow-2xl border border-gray-100 hover:border-[#AF0D5A] transition-all duration-300 flex flex-col items-center">
+              {/* Logo */}
+              <div className="p-4 bg-gradient-to-br from-[#f7f7f7] to-white rounded-full shadow-inner hover:scale-105 transition-transform duration-300">
+                <Image
+                  src={item.imgs}
+                  alt={item.title}
+                  width={80}
+                  height={80}
+                  className="object-contain"
+                />
+              </div>
+
+              <h3 className="mt-4 text-[16px] font-semibold text-gray-800 hover:text-[#AF0D5A] transition-colors tracking-wide">
+                {item.title}
+              </h3>
+            </div>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+
+      <div className="flex justify-center gap-4 mt-4">
+        <CarouselPrevious />
+        <CarouselNext />
+      </div>
+    </Carousel>
+  );
 };
 
 export default BrandsCrouser;

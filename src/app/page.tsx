@@ -3,6 +3,8 @@ import Header from "@/components/Header";
 import Layout from "@/components/Layout";
 import Services from "@/components/Services";
 import WhyChoose from "@/components/WhyChoose";
+import CompaniesSection from "@/components/CompaniesSection";
+import FeebackSection from "@/components/FeebackSection";
 
 
 
@@ -13,6 +15,8 @@ export default function Home() {
       <Services />
       <WhyChoose />
       <AboutUs />
+      <FeebackSection/>
+      <CompaniesSection/>
     </Layout>
   );
 }

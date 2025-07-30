@@ -1,181 +1,103 @@
 import React from "react";
 import Layout from "@/components/Layout";
-import Image from "next/image";
-import HeaderLogo from "../../assests/headerImg.png";
-import { ownerInfo, teamMembers } from "@/constants/usersInfo";
 import {
   FaUsers,
   FaHandshake,
   FaStar,
   FaClock,
-  FaMapMarkerAlt,
+  FaTools,
+  FaShieldAlt,
+  FaHeadset,
 } from "react-icons/fa";
-
-type HighlightProps = {
-  icon: React.ReactNode;
-  text: string;
-};
-
-const Highlight = ({ icon, text }: HighlightProps) => (
-  <div className="flex items-center space-x-3 bg-[#fff7fa] p-5  rounded-lg shadow-md">
-    <div className="text-[#AF0D5A] text-xl">{icon}</div>
-    <span className="text-gray-700 font-serif  font-medium">{text}</span>
-  </div>
-);
+import HiglightCart from "@/components/HiglightCart";
+import OwnerInfo from "./OwnerInfo";
+import TeamSection from "./TeamSection";
+import LocationSection from "./LocationSection";
 
 const About = () => {
   return (
     <Layout>
-      <section className="bg-white pt-24 pb-20">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-3xl font-serif font-semibold bg-gradient-to-r from-[#AF0D5A] to-pink-500 bg-clip-text text-transparent mb-6 leading-tight">
-                About Us
-                <br />
-                <span className="text-[50px] font-bold text-[#111828]">
-                  TrustOn<span className="text-[#AF0D5A]">Services</span>
-                </span>
-              </h1>
-              <p className="text-gray-700  font-serif text-lg mb-4 leading-relaxed">
-                Based in NCR, <strong>TrustOnServices</strong> is your trusted
-                home service partner. From appliance repair to deep cleaning, we
-                deliver reliable and affordable solutions — all just a click
-                away.
-              </p>
-              <p className="text-gray-600 font-serif  mb-6 text-md">
-                We've served <strong>1,000+ happy clients</strong> across Delhi,
-                Noida & Gurugram with our 50+ trained professionals. Your
-                comfort and safety are our top priority.
-              </p>
-              <div className="grid grid-cols-2 gap-4 mb-6">
-                <Highlight icon={<FaUsers />} text="1,000+ Clients" />
-                <Highlight icon={<FaHandshake />} text="5+ Years Experience" />
-                <Highlight icon={<FaStar />} text="4.9★ Average Rating" />
-                <Highlight icon={<FaClock />} text="30-Min Fast Response" />
-              </div>
-              <div className="bg-[#fdf3f7] border-l-4 border-[#AF0D5A] p-5 rounded-xl shadow-sm">
-                <h3 className="text-xl font-serif  text-[#AF0D5A] mb-2">
-                  Why Choose TrustOnServices?
-                </h3>
-                <ul className="list-disc list-inside text-gray-700 font-serif  space-y-1">
-                  <li>✅ Affordable pricing across NCR</li>
-                  <li>✅ 24/7 customer support</li>
-                  <li>✅ Verified & skilled experts</li>
-                  <li>✅ Easy online booking & tracking</li>
-                </ul>
-              </div>
-            </div>
+      <section className="bg-gradient-to-br from-[#ffffff] via-[#fff8fb] to-[#fef2f8] pt-24 pb-20">
+        <div className="max-w-7xl mx-auto px-10">
+          <div className="text-center max-w-3xl mx-auto mb-14 relative">
+            {/* Decorative Background */}
+            <div className="absolute -top-10 -left-14 w-32 h-32 bg-pink-200 rounded-full blur-[100px] opacity-30"></div>
+            <div className="absolute -bottom-10 -right-14 w-40 h-40 bg-[#AF0D5A] rounded-full blur-[120px] opacity-20"></div>
 
-            <div className="flex flex-col items-center justify-center space-y-4 ">
-              <div className="w-full  overflow-hidden rounded-xl ">
-                <Image
-                  src={HeaderLogo}
-                  alt="TrustOnServices"
-                  className="object-contain w-full h-full  "
-                  priority
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            {/* Small Gradient Subtitle */}
+            <h1 className="text-3xl sm:text-4xl font-serif font-semibold bg-gradient-to-r from-[#AF0D5A] to-pink-500 bg-clip-text text-transparent mb-3 tracking-wide drop-shadow-sm">
+              About Us
+            </h1>
 
-      <section className="py-20 bg-[#FFF0F5]">
-        <div className="text-center max-w-xl mx-auto">
-          <h2 className="text-4xl font-extrabold font-serif  text-[#AF0D5A] mb-6">
-            Meet Our Founder
-          </h2>
-          <Image
-            src={ownerInfo.profile}
-            alt={ownerInfo.name}
-            width={170}
-            height={170}
-            className="rounded-full mx-auto border-4 border-[#AF0D5A] shadow-lg object-center"
-          />
-          <h3 className="text-2xl font-serif  text-gray-800 mt-4">
-            {ownerInfo.name}
-          </h3>
-          <p className="text-gray-600 font-serif  text-sm">{ownerInfo.desc}</p>
-          <p className="mt-4 font-serif  text-gray-700 text-md leading-relaxed">
-            {ownerInfo.extrDesc}
-          </p>
-        </div>
-      </section>
+            {/* Main Title */}
+            <h2 className="text-4xl md:text-5xl font-serif font-extrabold text-[#111828] mb-5 leading-tight">
+              TrustOn<span className="text-[#AF0D5A]">Services</span>
+            </h2>
 
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-3xl sm:text-4xl font-serif font-extrabold text-[#AF0D5A] mb-2">
-            Our Expert Team
-          </h2>
-
-          <div className="max-w-2xl mx-auto mb-12">
-            <p className="text-gray-600 text-base sm:text-lg">
-              Meet the passionate professionals who bring dedication, skill, and
-              excellence to every project. Our team is committed to delivering
-              outstanding service .
+            {/* Description */}
+            <p className="text-gray-700 font-serif text-lg leading-relaxed px-4 sm:px-0">
+              Based in NCR, <strong>TrustOnServices</strong> is your trusted
+              home service partner. From appliance repair to deep cleaning, we
+              deliver reliable and affordable solutions — all just a click away.
+              <br className="hidden sm:block" />
+              We’ve served <strong>1,000+ happy clients</strong> across Delhi,
+              Noida & Gurugram with our 50+ trained professionals.
             </p>
           </div>
 
-          <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {teamMembers.map((member, idx) => (
-              <div
-                key={idx}
-                className="p-4 bg-white border border-gray-100 rounded-[24px] shadow-md hover:shadow-lg hover:-translate-y-2 hover:border-[#AF0D5A] transition-all duration-300  dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center"
-              >
-                <Image
-                  src={member.profile}
-                  alt={member.name}
-                  priority
-                  className="w-full h-45 rounded-xl object-cover mb-2"
-                />
-                <h3 className="text-xl font-serif text-gray-800">
-                  {member.name}
-                </h3>
-                <p className="text-sm font-sans text-[#AF0D5A] mb-2">
-                  {member.role}
-                </p>
-                <p className="text-sm font-sans text-gray-600">
-                  {member.experience} Experience
-                </p>
-                <p className="text-gray-700 font-sans text-sm mt-2 leading-snug">
-                  {member.desc}
-                </p>
-              </div>
-            ))}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            <HiglightCart
+              icon={<FaUsers />}
+              title="1,000+ Clients"
+              text="Proudly serving happy customers across Delhi NCR."
+            />
+            <HiglightCart
+              icon={<FaHandshake />}
+              title="5+ Years Experience"
+              text="Trusted expertise in home services and appliance care."
+            />
+            <HiglightCart
+              icon={<FaStar />}
+              title="4.9★ Average Rating"
+              text="Our customers love our quality and professionalism."
+            />
+            <HiglightCart
+              icon={<FaClock />}
+              title="30-Min Fast Response"
+              text="Quick service to solve your problems on time."
+            />
+            <HiglightCart
+              icon={<FaTools />}
+              title="Certified Technicians"
+              text="Skilled professionals for guaranteed service quality."
+            />
+            <HiglightCart
+              icon={<FaShieldAlt />}
+              title="Reliable & Safe"
+              text="Background-verified staff for your peace of mind."
+            />
+          </div>
+
+          {/* WHY CHOOSE */}
+          <div className="bg-gradient-to-r from-[#fff0f6] to-[#ffe6f1] border-l-4 border-[#AF0D5A] p-6 rounded-xl shadow-sm max-w-4xl mx-auto">
+            <h3 className="text-xl font-serif text-[#AF0D5A] mb-2 text-center">
+              Why Choose TrustOnServices?
+            </h3>
+            <ul className="list-disc list-inside text-gray-700 font-serif space-y-1 text-center sm:text-left">
+              <li>✅ Affordable pricing across NCR</li>
+              <li>✅ 24/7 customer support</li>
+              <li>✅ Verified & skilled experts</li>
+              <li>✅ Easy online booking & tracking</li>
+            </ul>
           </div>
         </div>
       </section>
-
-      <section className="py-16 bg-[#F7F7F7]">
-        <div className="max-w-6xl mx-auto px-4 text-center ">
-          <h2 className="text-3xl sm:text-4xl font-serif font-extrabold text-[#AF0D5A] mb-2">
-            We Proudly Serve
-          </h2>
-          <p className="text-gray-600 text-base sm:text-lg mb-10">
-            Bringing top-quality services to your doorstep with professionalism
-          </p>
-
-          <div className="flex flex-wrap justify-center gap-6">
-            {[
-              "Delhi",
-              "Noida",
-              "Gurugram",
-              "Faridabad",
-              "Ghaziabad",
-              "Greater Noida",
-            ].map((city, i) => (
-              <span
-                key={i}
-                className="inline-flex items-center gap-2 bg-white border border-[#AF0D5A] px-6 py-3 rounded-full shadow-sm hover:bg-[#AF0D5A] hover:text-white transition-all duration-300 text-[#AF0D5A] font-medium"
-              >
-                <FaMapMarkerAlt className="text-lg" />
-                {city}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Owener info */}
+      <OwnerInfo />
+      {/* team Section */}
+      <TeamSection />
+      {/* Locaiotn */}
+      <LocationSection />
     </Layout>
   );
 };
