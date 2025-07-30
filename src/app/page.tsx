@@ -5,6 +5,7 @@ import Services from "@/components/Services";
 import WhyChoose from "@/components/WhyChoose";
 import CompaniesSection from "@/components/CompaniesSection";
 import FeebackSection from "@/components/FeebackSection";
+import FAQ from "@/components/FAQ";
 
 
 
@@ -17,6 +18,7 @@ export default function Home() {
       <AboutUs />
       <FeebackSection/>
       <CompaniesSection/>
+      <FAQ/>
     </Layout>
   );
 }

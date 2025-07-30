@@ -15,17 +15,16 @@ const BrandsCrouser: React.FC<CompaniesLovesProps> = ({ data }) => {
         {data.map((item, index) => (
           <CarouselItem
             key={index}
-            className="basis-1/2 sm:basis-1/3 lg:basis-1/5 flex justify-center"
+            className="basis-1/1 sm:basis-1/3 lg:basis-1/5 flex justify-center"
           >
             <div className="w-full max-w-[200px] bg-white p-6 rounded-2xl shadow-md hover:shadow-2xl border border-gray-100 hover:border-[#AF0D5A] transition-all duration-300 flex flex-col items-center">
-              {/* Logo */}
               <div className="p-4 bg-gradient-to-br from-[#f7f7f7] to-white rounded-full shadow-inner hover:scale-105 transition-transform duration-300">
                 <Image
                   src={item.imgs}
                   alt={item.title}
-                  width={80}
-                  height={80}
-                  className="object-contain"
+                  width={100}
+                  height={100}
+                  className="object-contain rounded-full"
                 />
               </div>
 

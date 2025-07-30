@@ -7,12 +7,12 @@ import {
   FaClock,
   FaTools,
   FaShieldAlt,
-  FaHeadset,
 } from "react-icons/fa";
-import HiglightCart from "@/components/HiglightCart";
-import OwnerInfo from "./OwnerInfo";
+import HiglightCart from "@/components/HiglightCart"
 import TeamSection from "./TeamSection";
 import LocationSection from "./LocationSection";
+import OwnerInfoSection from "./OwnerInfoSection";
+import FAQ from "@/components/FAQ";
 
 const About = () => {
   return (
@@ -20,21 +20,21 @@ const About = () => {
       <section className="bg-gradient-to-br from-[#ffffff] via-[#fff8fb] to-[#fef2f8] pt-24 pb-20">
         <div className="max-w-7xl mx-auto px-10">
           <div className="text-center max-w-3xl mx-auto mb-14 relative">
-            {/* Decorative Background */}
+       
             <div className="absolute -top-10 -left-14 w-32 h-32 bg-pink-200 rounded-full blur-[100px] opacity-30"></div>
             <div className="absolute -bottom-10 -right-14 w-40 h-40 bg-[#AF0D5A] rounded-full blur-[120px] opacity-20"></div>
 
-            {/* Small Gradient Subtitle */}
+
             <h1 className="text-3xl sm:text-4xl font-serif font-semibold bg-gradient-to-r from-[#AF0D5A] to-pink-500 bg-clip-text text-transparent mb-3 tracking-wide drop-shadow-sm">
               About Us
             </h1>
 
-            {/* Main Title */}
+
             <h2 className="text-4xl md:text-5xl font-serif font-extrabold text-[#111828] mb-5 leading-tight">
               TrustOn<span className="text-[#AF0D5A]">Services</span>
             </h2>
 
-            {/* Description */}
+
             <p className="text-gray-700 font-serif text-lg leading-relaxed px-4 sm:px-0">
               Based in NCR, <strong>TrustOnServices</strong> is your trusted
               home service partner. From appliance repair to deep cleaning, we
@@ -93,11 +93,13 @@ const About = () => {
         </div>
       </section>
       {/* Owener info */}
-      <OwnerInfo />
+      <OwnerInfoSection />
       {/* team Section */}
       <TeamSection />
       {/* Locaiotn */}
       <LocationSection />
+      {/* faq */}
+      <FAQ/>
     </Layout>
   );
 };

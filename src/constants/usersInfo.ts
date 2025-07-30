@@ -1,13 +1,8 @@
 import birjeshpic from "../assests/users/brijesh.jpeg"
 import sourabpic from "../assests/users/sourab.jpeg"
-
 import { StaticImageData } from "next/image";
-interface OwnerInfo {
-  name: string;
-  desc: string;
-  extrDesc: string;
-  profile :StaticImageData
-}
+import {OwnerInfo,TeamMembersInfo} from "../types/landing"
+
 
 export const ownerInfo : OwnerInfo= {
     name :"Brijesh Kumar",
@@ -16,14 +11,6 @@ export const ownerInfo : OwnerInfo= {
     profile : birjeshpic
 }
 
-
-interface TeamMembersInfo {
-  name: string;
-  desc: string;
-  experience: string;
-  profile :StaticImageData,
-  role:string
-}
 
 export const teamMembers : TeamMembersInfo []= [
   {

@@ -28,3 +28,24 @@ export interface CompanyLovesItem {
 export interface CompaniesLovesProps {
   data: CompanyLovesItem[];
 }
+
+export interface OwnerInfo {
+  name: string;
+  desc: string;
+  extrDesc: string;
+  profile :StaticImageData
+}
+
+
+export interface TeamMembersInfo {
+  name: string;
+  desc: string;
+  experience: string;
+  profile :StaticImageData,
+  role:string
+}
+
+export interface FAQ {
+  title :string,
+  desc :string
+}

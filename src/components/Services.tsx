@@ -8,12 +8,12 @@ const Services = () => {
       <div className="container mx-auto px-4 sm:px-10">
         {/* Section Heading */}
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-serif tracking-[1px] font-semibold text-[#AF0D5A] mb-4">
+          <h2 className="text-2xl sm:text-4xl font-serif tracking-[1px] md:font-semibold text-[#AF0D5A] mb-4">
             Trusted Home Services for Delhi NCR
           </h2>
 
           {/* Short paragraph on mobile, full on desktop */}
-          <p className="text-[15px] sm:text-[16px] text-[#555] leading-relaxed font-serif sm:hidden">
+          <p className="text-[14px] sm:text-[16px] text-[#555] leading-relaxed font-serif sm:hidden">
             Reliable AC, fridge & washing machine service right at your doorstep
             in Delhi NCR.
           </p>

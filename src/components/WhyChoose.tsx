@@ -4,17 +4,17 @@ import { WhyChooseUsCrausel } from './WhyChooseUsCrausel';
 
 const WhyChoose = () => {
   return (
-    <section className="bg-gradient-to-b from-[#EBF7FD] via-white to-[#FDEBF3] pt-10 sm:pt-14 pb-12">
+    <section className="bg-gradient-to-b from-[#EBF7FD] via-white to-[#FDEBF3] pt-10 sm:pt-14 pb-10 md:pb-12 ">
       <div className="container mx-auto px-4 sm:px-10">
 
         {/* Heading */}
         <div className="max-w-2xl mx-auto text-center mb-10">
-          <h2 className="text-3xl sm:text-4xl font-serif font-extrabold text-[#AF0D5A] mb-4">
+          <h2 className="text-2xl sm:text-4xl font-serif md:font-extrabold text-[#AF0D5A] mb-4">
             Why Choose Us
           </h2>
 
           {/* Short for mobile */}
-          <p className="text-[15px] text-[#666] font-serif sm:hidden">
+          <p className="text-[14px] text-[#666] font-serif sm:hidden">
             5+ years of trusted appliance repair services in Delhi NCR.
           </p>
 

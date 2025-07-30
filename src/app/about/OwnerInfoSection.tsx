@@ -2,7 +2,7 @@ import React from "react";
 import { ownerInfo } from "@/constants/usersInfo";
 import Image from "next/image";
 
-const OwnerInfo = () => {
+const OwnerInfoSection = () => {
   return (
     <section className="relative py-20 bg-gradient-to-br from-[#fff0f6] via-[#ffe6f0] to-[#fff8fb] overflow-hidden">
       {/* Decorative Background Circles */}
@@ -58,4 +58,4 @@ const OwnerInfo = () => {
   );
 };
 
-export default OwnerInfo;
+export default OwnerInfoSection;

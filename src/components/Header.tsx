@@ -4,13 +4,13 @@ import EnqueryPopUp from "../components/EnqueryPopUp";
 
 const Header = () => {
   return (
-    <header className="relative overflow-hidden bg-gradient-to-br from-[#EBF7FD] via-white to-[#FDEBF3] pt-20 sm:pt-28 pb-16 sm:pb-20">
+    <header className="relative overflow-hidden bg-gradient-to-br from-[#EBF7FD] via-white to-[#FDEBF3] pt-22 sm:pt-28 pb-12 sm:pb-20">
       
       {/* Decorative Background Blobs */}
       <div className="absolute -top-20 -left-20 w-56 sm:w-72 h-56 sm:h-72 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50"></div>
       <div className="absolute top-40 -right-20 w-56 sm:w-72 h-56 sm:h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50"></div>
 
-      <div className="container mx-auto px-4 sm:px-10 relative z-10">
+      <div className="container mx-auto px-4 sm:px-10 relative z-10 mt-5 md:mt-0">
         <div className="flex flex-col items-center text-center space-y-5 sm:space-y-6 max-w-3xl mx-auto">
           
           {/* Icons Row */}
@@ -52,7 +52,7 @@ const Header = () => {
           {/* Button */}
           <EnqueryPopUp>
             <button className="bg-[#AF0D5A] font-serif hover:bg-[#930d4a] transition-all duration-200 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-full flex items-center gap-2 shadow-lg w-full sm:w-auto justify-center">
-              Book Service Now <FaArrowRight />
+              Book <span className="p-0 m-0 hidden md:block">Service</span> Now <FaArrowRight />
             </button>
           </EnqueryPopUp>
         </div>
