@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/carousel";
 import { WhyChooseUsCrauselProps } from "@/types/landing";
 import FeedbackCard from "./FeedbackCard";
+import Link from "next/link";
 
 const FeedbackCrouserl: React.FC<WhyChooseUsCrauselProps> = ({ data }) => {
   return (
@@ -17,7 +18,9 @@ const FeedbackCrouserl: React.FC<WhyChooseUsCrauselProps> = ({ data }) => {
             key={index}
             className=" basis-full md:basis-1/2 lg:basis-1/3 "
           >
-            <FeedbackCard />
+            <Link href={"feedback"}>
+              <FeedbackCard />
+            </Link>
           </CarouselItem>
         ))}
       </CarouselContent>

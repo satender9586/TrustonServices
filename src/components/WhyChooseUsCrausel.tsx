@@ -17,7 +17,7 @@ export const WhyChooseUsCrausel: React.FC<WhyChooseUsCrauselProps> = ({ data }) 
       }}
       className="w-full"
     >
-      <CarouselContent className="gap-4 md:gap-8 md:py-4 ">
+      <CarouselContent className=" md:py-4 ">
         {data.map((items, index) => (
           <CarouselItem
             key={index}

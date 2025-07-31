@@ -1,6 +1,7 @@
 import React from "react";
 import { ServicesItems } from "../constants/ServicesFakeData";
 import ServiceItemCard from "./ServiceItemCard";
+import Link from "next/link";
 
 const Services = () => {
   return (
@@ -12,7 +13,6 @@ const Services = () => {
             Trusted Home Services{" "}
             <span className="hidden md:inline-block">for Delhi NCR</span>
           </h2>
-
 
           <p className="block md:hidden text-[14px] sm:text-[15px] md:text-[16px] tracking-wide text-[#555] leading-relaxed text-center px-9 sm:px-4">
             Reliable AC, fridge & washing machine service right at your doorstep
@@ -33,16 +33,15 @@ const Services = () => {
         {/* Grid of Services */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 ">
           {ServicesItems.map((service) => (
-            <div
-              key={service.itemname}
-              className="group "
-            >
-              <ServiceItemCard
-                itemUrl={service.itemUrl}
-                itemName={service.itemname}
-                itemDesc={service.itemDesc}
-              />
-            </div>
+            <Link href={`/services/${service.path}`} key={service.itemname}>
+              <div  className="group">
+                <ServiceItemCard
+                  itemUrl={service.itemUrl}
+                  itemName={service.itemname}
+                  itemDesc={service.itemDesc}
+                />
+              </div>
+            </Link>
           ))}
         </div>
       </div>

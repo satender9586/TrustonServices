@@ -11,11 +11,11 @@ import Image from "next/image";
 const BrandsCrouser: React.FC<CompaniesLovesProps> = ({ data }) => {
   return (
     <Carousel opts={{ align: "start", loop: true }}>
-      <CarouselContent className="gap-4 py-4">
+      <CarouselContent className="py-4">
         {data.map((item, index) => (
           <CarouselItem
             key={index}
-            className="basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/5 flex justify-center"
+            className="basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4 flex justify-center"
           >
             <div className="w-full max-w-[370px] bg-white p-6 rounded-2xl shadow-md hover:shadow-2xl border border-gray-100 hover:border-[#AF0D5A] transition-all duration-300 flex flex-col items-center">
               <div className="p-4 bg-gradient-to-br from-[#f7f7f7] to-white rounded-full shadow-inner hover:scale-105 transition-transform duration-300">
