@@ -4,22 +4,22 @@ import { WhyChooseUsCrausel } from './WhyChooseUsCrausel';
 
 const WhyChoose = () => {
   return (
-    <section className="bg-gradient-to-b from-[#EBF7FD] via-white to-[#FDEBF3] pt-10 sm:pt-14 pb-10 md:pb-12 ">
-      <div className="container mx-auto px-4 sm:px-10">
+    <section className="bg-gradient-to-b from-[#EBF7FD] via-white to-[#FDEBF3]  py-5 sm:py-8 ">
+      <div className="container mx-auto px-4 sm:px-10 pb-4">
 
         {/* Heading */}
-        <div className="max-w-2xl mx-auto text-center mb-10">
-          <h2 className="text-2xl sm:text-4xl font-serif md:font-extrabold text-[#AF0D5A] mb-4">
+        <div className="max-w-2xl mx-auto text-center mb-6 md:mb-8">
+          <h2 className="text-[24px] sm:text-4xl md:leading-12  tracking-[1.5px] md:tracking-[2px] md:font-semibold text-[#AF0D5A] mb-2 md:mb-2">
             Why Choose Us
           </h2>
 
           {/* Short for mobile */}
-          <p className="text-[14px] text-[#666] font-serif sm:hidden">
+          <p className="block md:hidden text-[14px] sm:text-[15px] md:text-[16px] tracking-wide text-[#555] leading-relaxed text-center px-9 sm:px-4">
             5+ years of trusted appliance repair services in Delhi NCR.
           </p>
 
           {/* Full for larger screens */}
-          <p className="hidden sm:block text-[15px] sm:text-[16px] text-[#666] font-serif leading-relaxed">
+          <p className="hidden sm:block text-[15px] tracking-wide sm:text-[16px] text-[#555] leading-relaxed ">
             At <span className="text-[#AF0D5A] font-semibold">Trust On Services</span>, we deliver 
             <strong> fast, reliable, and affordable </strong> AC, washing machine, and refrigerator repairs.  
             With over <strong>5 years of experience</strong>, we’ve built a reputation for excellence across Delhi NCR.

@@ -8,8 +8,8 @@ const FeedbackCard = () => {
       
       {/* Quote + Stars */}
       <div className="flex justify-between items-start mb-4">
-        <div className="p-2 bg-gradient-to-br from-pink-50 to-white rounded-full shadow-sm">
-          <FaQuoteLeft className="text-3xl text-[#AF0D5A] opacity-90" />
+        <div className="">
+          <FaQuoteLeft className="text-2xl text-[#AF0D5A] opacity-90" />
         </div>
         <div className="flex gap-1 text-[#FF7F22] text-xl drop-shadow-sm">
           {Array(5).fill(0).map((_, i) => (

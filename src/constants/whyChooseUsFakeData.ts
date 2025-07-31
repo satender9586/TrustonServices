@@ -44,15 +44,15 @@ export const whyChooseUsData: WhyChooseUsItem[] = [
 
 export const companiesLovesData: CompanyLovesItem[] = [
   {
-    imgs :samasung,
+    imgs :lgImg,
     title :"Samsung"
   },
   {
-    imgs :godrejImg,
+    imgs :lgImg,
     title :"Godrej"
   },
   {
-    imgs :panasonicImg,
+    imgs :lgImg,
     title :"Panasonic"
   },
   {
@@ -60,11 +60,11 @@ export const companiesLovesData: CompanyLovesItem[] = [
     title :"LG"
   },
   {
-    imgs :daikinImg,
+    imgs :lgImg,
     title :"Daikin"
   },
   {
-    imgs :wirepoolImg,
+    imgs :lgImg,
     title :"Wirepool"
   },
 ]

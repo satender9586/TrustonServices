@@ -47,14 +47,13 @@ const Navbaar = () => {
           </div>
         </div>
 
-        {/* Desktop Navigation */}
         <nav className="hidden sm:flex items-center gap-6 text-[15px] font-medium">
           {NAVBAR_TABS.map(({ PATH, TABNAME }) => (
             <Link href={PATH} key={TABNAME}>
               <li
                 className="font-serif list-none hover:text-[#AF0D5A] relative cursor-pointer transition-colors"
               >
-                <span className="after:absolute tracking-[1.1px] text-md after:content-[''] after:w-0 after:h-[2px] after:left-0 after:-bottom-1 after:bg-[#AF0D5A] hover:after:w-full after:transition-all after:duration-300">
+                <span className="after:absolute tracking-[1.1px] text-[17px] after:content-[''] after:w-0 after:h-[2px] after:left-0 after:-bottom-1 after:bg-[#AF0D5A] hover:after:w-full after:transition-all after:duration-300">
                   {TABNAME}
                 </span>
               </li>
@@ -62,7 +61,7 @@ const Navbaar = () => {
           ))}
         </nav>
 
-        {/* Desktop Buttons */}
+
         <div className="hidden sm:flex gap-3">
           <button className="px-5 py-1 rounded-full font-serif text-[#AF0D5A] border border-[#AF0D5A] hover:bg-[#AF0D5A] hover:text-white transition-all duration-300">
             Login
@@ -72,7 +71,7 @@ const Navbaar = () => {
           </button>
         </div>
 
-        {/* Mobile Menu Icon */}
+
         <div className="sm:hidden">
           <button
             onClick={toggleMobileMenu}

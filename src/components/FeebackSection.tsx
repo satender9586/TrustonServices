@@ -5,17 +5,19 @@ import { whyChooseUsData } from "@/constants/whyChooseUsFakeData";
 const FeebackSection = () => {
   return (
     <React.Fragment>
-      <section className="bg-gradient-to-b from-[#fffafc] via-white to-[#fef6f9] py-12">
-        <div className="container mx-auto px-4 sm:px-10 text-center">
-          <h2 className="text-3xl sm:text-4xl font-serif md:font-extrabold text-[#AF0D5A] mb-4">
-            What Our Clients Say
-          </h2>
+      <section className="bg-gradient-to-b from-[#fffafc] via-white to-[#fef6f9] py-5 sm:py-8">
+        <div className="container mx-auto px-4 sm:px-10 pb-4 text-center ">
+          <div>
+            <h2 className="text-[24px] sm:text-4xl md:leading-12  tracking-[1.5px] md:tracking-[2px] md:font-semibold text-[#AF0D5A] mb-2 md:mb-2">
+              What Our Clients Say
+            </h2>
 
-          <p className="max-w-2xl mx-auto text-[14px] sm:text-[16px] text-[#666] mb-5 md:mb-10 font-serif">
-            Our customers love us for our quality, professionalism, and on-time
-            service.
-          </p>
-          <FeedbackCrouserl data={whyChooseUsData} />
+            <p className="text-[15px] tracking-wide sm:text-[16px] text-[#555] leading-relaxed pb-4">
+              Our customers love us for our quality, professionalism, and
+              on-time service.
+            </p>
+            <FeedbackCrouserl data={whyChooseUsData} />
+          </div>
         </div>
       </section>
     </React.Fragment>

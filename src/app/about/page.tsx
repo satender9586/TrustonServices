@@ -17,10 +17,9 @@ import FAQ from "@/components/FAQ";
 const About = () => {
   return (
     <Layout>
-      <section className="bg-gradient-to-br from-[#ffffff] via-[#fff8fb] to-[#fef2f8] pt-24 pb-20">
-        <div className="max-w-7xl mx-auto px-10">
+      <section className="bg-gradient-to-br from-[#ffffff] via-[#fff8fb] to-[#fef2f8] pt-24 pb-8">
+        <div className="max-w-7xl mx-auto px-4 md:px-10">
           <div className="text-center max-w-3xl mx-auto mb-14 relative">
-       
             <div className="absolute -top-10 -left-14 w-32 h-32 bg-pink-200 rounded-full blur-[100px] opacity-30"></div>
             <div className="absolute -bottom-10 -right-14 w-40 h-40 bg-[#AF0D5A] rounded-full blur-[120px] opacity-20"></div>
 
@@ -45,7 +44,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-12">
             <HiglightCart
               icon={<FaUsers />}
               title="1,000+ Clients"
@@ -79,17 +78,7 @@ const About = () => {
           </div>
 
           {/* WHY CHOOSE */}
-          <div className="bg-gradient-to-r from-[#fff0f6] to-[#ffe6f1] border-l-4 border-[#AF0D5A] p-6 rounded-xl shadow-sm max-w-4xl mx-auto">
-            <h3 className="text-xl font-serif text-[#AF0D5A] mb-2 text-center">
-              Why Choose TrustOnServices?
-            </h3>
-            <ul className="list-disc list-inside text-gray-700 font-serif space-y-1 text-center sm:text-left">
-              <li>✅ Affordable pricing across NCR</li>
-              <li>✅ 24/7 customer support</li>
-              <li>✅ Verified & skilled experts</li>
-              <li>✅ Easy online booking & tracking</li>
-            </ul>
-          </div>
+         
         </div>
       </section>
       {/* Owener info */}

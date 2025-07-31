@@ -11,11 +11,11 @@ import FeedbackCard from "./FeedbackCard";
 const FeedbackCrouserl: React.FC<WhyChooseUsCrauselProps> = ({ data }) => {
   return (
     <Carousel opts={{ align: "start" }}>
-      <CarouselContent className=" py-4">
+      <CarouselContent className="py-4">
         {Array.from({ length: 10 }).map((_, index) => (
           <CarouselItem
             key={index}
-            className=" basis-full md:basis-1/2 lg:basis-1/4 "
+            className=" basis-full md:basis-1/2 lg:basis-1/3 "
           >
             <FeedbackCard />
           </CarouselItem>
