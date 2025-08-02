@@ -7,8 +7,8 @@ import ServiceItemCard from "@/components/ServiceItemCard";
 import WithTrandingLableServiceCard from "@/HOC/WithTrandingLableServiceCard";
 
 const ServiceItem = () => {
-  const ServiceItemWithLable = WithTrandingLableServiceCard(ServiceItemCard)
-
+  const ServiceItemCardWithLabel =
+    WithTrandingLableServiceCard(ServiceItemCard);
 
   const params = useParams();
   const slug = params.slug;
@@ -44,15 +44,25 @@ const ServiceItem = () => {
 
           <div className="mt-7">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 ">
-              {categories?.map((service) => (
-                <div className="group" key={service.itemname}>
-                  <ServiceItemCard
-                    itemUrl={service.itemUrl}
-                    itemName={service.itemname}
-                    itemDesc={service.itemDesc}
-                  />
-                </div>
-              ))}
+              {categories?.map((service) =>
+                service.trending ? (
+                  <div className="group" key={service.itemname}>
+                    <ServiceItemCardWithLabel
+                      itemUrl={service.itemUrl}
+                      itemName={service.itemname}
+                      itemDesc={service.itemDesc}
+                    />
+                  </div>
+                ) : (
+                  <div className="group" key={service.itemname}>
+                    <ServiceItemCard
+                      itemUrl={service.itemUrl}
+                      itemName={service.itemname}
+                      itemDesc={service.itemDesc}
+                    />
+                  </div>
+                )
+              )}
             </div>
           </div>
         </div>

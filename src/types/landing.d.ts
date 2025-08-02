@@ -57,6 +57,7 @@ interface ServiceCategory {
   itemname: string;
   itemUrl: StaticImageData;
   itemDesc: string;
+  trending ?: boolean
 }
 
 export interface Service {

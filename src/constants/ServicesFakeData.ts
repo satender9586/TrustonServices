@@ -18,28 +18,32 @@ export const ServicesItems: Service[] = [
         path: "split-ac",
         itemname: "Split Air Conditioner",
         itemUrl: ACIMG,
-        itemDesc: "Installation and repair of split AC units."
+        itemDesc: "Installation and repair of split AC units.",
+        trending : true
       },
       {
         name: "Window AC",
         path: "window-ac",
         itemname: "Window Air Conditioner",
         itemUrl: ACIMG,
-        itemDesc: "Efficient service for window AC units."
+        itemDesc: "Efficient service for window AC units.",
+         trending : false
       },
       {
         name: "Central AC",
         path: "central-ac",
         itemname: "Central Air Conditioner",
         itemUrl: ACIMG,
-        itemDesc: "Complete solutions for central AC systems."
+        itemDesc: "Complete solutions for central AC systems.",
+         trending : false
       },
       {
         name: "Portable AC",
         path: "portable-ac",
         itemname: "Portable Air Conditioner",
         itemUrl: ACIMG,
-        itemDesc: "Maintenance for portable AC units."
+        itemDesc: "Maintenance for portable AC units.",
+         trending : false
       }
     ]
   },
@@ -54,28 +58,32 @@ export const ServicesItems: Service[] = [
         path: "front-load",
         itemname: "Front Load Washing Machine",
         itemUrl: WASHINGIMG,
-        itemDesc: "Expert repair for front load washing machines."
+        itemDesc: "Expert repair for front load washing machines.",
+         trending : false
       },
       {
         name: "Top Load",
         path: "top-load",
         itemname: "Top Load Washing Machine",
         itemUrl: WASHINGIMG,
-        itemDesc: "Maintenance for top load washing machines."
+        itemDesc: "Maintenance for top load washing machines.",
+         trending : false
       },
       {
         name: "Semi Automatic",
         path: "semi-automatic",
         itemname: "Semi Automatic Washing Machine",
         itemUrl: WASHINGIMG,
-        itemDesc: "Service for semi-automatic washing machines."
+        itemDesc: "Service for semi-automatic washing machines.",
+         trending : false
       },
       {
         name: "Fully Automatic",
         path: "fully-automatic",
         itemname: "Fully Automatic Washing Machine",
         itemUrl: WASHINGIMG,
-        itemDesc: "Care and repair for fully automatic washing machines."
+        itemDesc: "Care and repair for fully automatic washing machines.",
+         trending : false
       }
     ]
   },
@@ -90,21 +98,24 @@ export const ServicesItems: Service[] = [
         path: "leak-repair",
         itemname: "Leak Repair Service",
         itemUrl: PLUMBIMG,
-        itemDesc: "Quick and effective repair of water leaks."
+        itemDesc: "Quick and effective repair of water leaks.",
+         trending : false
       },
       {
         name: "Pipe Installation",
         path: "pipe-installation",
         itemname: "Pipe Installation Service",
         itemUrl: PLUMBIMG,
-        itemDesc: "Professional installation of water and drainage pipes."
+        itemDesc: "Professional installation of water and drainage pipes.",
+         trending : false
       },
       {
         name: "Bathroom Fittings",
         path: "bathroom-fittings",
         itemname: "Bathroom Fittings Service",
         itemUrl: PLUMBIMG,
-        itemDesc: "Expert installation of bathroom fixtures and accessories."
+        itemDesc: "Expert installation of bathroom fixtures and accessories.",
+         trending : false
       }
     ]
   },
@@ -119,21 +130,24 @@ export const ServicesItems: Service[] = [
         path: "wiring",
         itemname: "Electrical Wiring Service",
         itemUrl: ELECTIMG,
-        itemDesc: "Installation and maintenance of safe electrical wiring."
+        itemDesc: "Installation and maintenance of safe electrical wiring.",
+         trending : false
       },
       {
         name: "Lighting Installation",
         path: "lighting-installation",
         itemname: "Lighting Installation Service",
         itemUrl: ELECTIMG,
-        itemDesc: "Professional installation of home and office lighting."
+        itemDesc: "Professional installation of home and office lighting.",
+         trending : false
       },
       {
         name: "Appliance Repair",
         path: "appliance-repair",
         itemname: "Appliance Repair Service",
         itemUrl: ELECTIMG,
-        itemDesc: "Troubleshooting and repair of electrical appliances."
+        itemDesc: "Troubleshooting and repair of electrical appliances.",
+         trending : false
       }
     ]
   },
@@ -148,21 +162,24 @@ export const ServicesItems: Service[] = [
         path: "haircut",
         itemname: "Haircut Service",
         itemUrl: ELECTIMG,
-        itemDesc: "Expert haircuts for men and women."
+        itemDesc: "Expert haircuts for men and women.",
+         trending : false
       },
       {
         name: "Facial",
         path: "facial",
         itemname: "Facial Service",
         itemUrl: ELECTIMG,
-        itemDesc: "Rejuvenating facials for all skin types."
+        itemDesc: "Rejuvenating facials for all skin types.",
+         trending : false
       },
       {
         name: "Makeup",
         path: "makeup",
         itemname: "Makeup Service",
         itemUrl: ELECTIMG,
-        itemDesc: "Professional makeup for events and parties."
+        itemDesc: "Professional makeup for events and parties.",
+         trending : false
       }
     ]
   },
@@ -177,21 +194,24 @@ export const ServicesItems: Service[] = [
         path: "food-delivery",
         itemname: "Food Delivery Service",
         itemUrl: ELECTIMG,
-        itemDesc: "Quick delivery of fresh and hot meals."
+        itemDesc: "Quick delivery of fresh and hot meals.",
+         trending : false
       },
       {
         name: "Grocery Delivery",
         path: "grocery-delivery",
         itemname: "Grocery Delivery Service",
         itemUrl: ELECTIMG,
-        itemDesc: "Same-day delivery of groceries to your home."
+        itemDesc: "Same-day delivery of groceries to your home.",
+         trending : false
       },
       {
         name: "Courier Services",
         path: "courier-services",
         itemname: "Courier Service",
         itemUrl: ELECTIMG,
-        itemDesc: "Secure and fast courier services for packages."
+        itemDesc: "Secure and fast courier services for packages.",
+         trending : false
       }
     ]
   }
