@@ -23,7 +23,6 @@ const About = () => {
             <div className="absolute -top-10 -left-14 w-32 h-32 bg-pink-200 rounded-full blur-[100px] opacity-30"></div>
             <div className="absolute -bottom-10 -right-14 w-40 h-40 bg-[#AF0D5A] rounded-full blur-[120px] opacity-20"></div>
 
-
             <h1 className="text-3xl sm:text-4xl font-serif font-semibold bg-gradient-to-r from-[#AF0D5A] to-pink-500 bg-clip-text text-transparent mb-3 tracking-wide drop-shadow-sm">
               About Us
             </h1>

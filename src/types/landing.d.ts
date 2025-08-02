@@ -49,3 +49,20 @@ export interface FAQ {
   title :string,
   desc :string
 }
+
+
+interface ServiceCategory {
+  name: string;
+  path: string;
+  itemname: string;
+  itemUrl: StaticImageData;
+  itemDesc: string;
+}
+
+export interface Service {
+  itemname: string;
+  itemUrl: StaticImageData;
+  itemDesc: string;
+  path: string;
+  categories: ServiceCategory[];
+}

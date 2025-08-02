@@ -7,7 +7,6 @@ const Services = () => {
   return (
     <section className="bg-gradient-to-b from-[#EBF7FD] via-white to-[#FDEBF3]  py-5 sm:py-8">
       <div className="container mx-auto px-4 sm:px-10 pb-4">
-        {/* Section Heading */}
         <div className="max-w-3xl mx-auto text-center mb-6 md:mb-8">
           <h2 className="text-[24px] sm:text-4xl md:leading-12  tracking-[1.5px] md:tracking-[2px] md:font-semibold text-[#AF0D5A] mb-2 md:mb-2">
             Trusted Home Services{" "}
@@ -30,9 +29,8 @@ const Services = () => {
           </p>
         </div>
 
-        {/* Grid of Services */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 ">
-          {ServicesItems.map((service) => (
+          {ServicesItems?.map((service) => (
             <Link href={`/services/${service.path}`} key={service.itemname}>
               <div  className="group">
                 <ServiceItemCard
