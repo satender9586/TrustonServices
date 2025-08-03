@@ -41,7 +41,7 @@ const Footer = () => {
             </h2>
             <ul className="space-y-2 text-sm text-[#666]">
               {["Home", "About", "Contact", "Feedback"].map((item, i) => (
-                <Link href={item.toLocaleLowerCase()} key={i}>
+                <Link href={item==="Home" ? "/" : item.toLocaleLowerCase()} key={i}>
                   <li
                     
                     className="hover:text-[#AF0D5A] text-[15px] tracking-wide transition-colors duration-200 cursor-pointer"
