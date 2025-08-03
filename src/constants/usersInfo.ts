@@ -1,96 +1,46 @@
-import birjeshpic from "../assests/users/brijesh.jpeg"
-import sourabpic from "../assests/users/sourab.jpeg"
+import BrijeshImg from "../assests/users/BrijeshImg.jpeg"
+import AyushImg from "../assests/users/aysh.jpeg"
+import sourabTechImg from "../assests/users/sourabTech.jpeg"
+import NakulImg from "../assests/users/nakul.jpeg"
 import { StaticImageData } from "next/image";
 import {OwnerInfo,TeamMembersInfo} from "../types/landing"
 
 
 export const ownerInfo : OwnerInfo= {
-    name :"Brijesh Kumar",
+    name :"Sourab Kumar",
     desc :"Founder , TrustOnServices",
     extrDesc :"With over 6 years of experience in the home service industry, Brijesh has built a platform you can rely on — from plumbing to grooming, he ensures service quality and trust come first.",
-    profile : birjeshpic
+    profile : sourabTechImg
 }
 
 
-export const teamMembers : TeamMembersInfo []= [
+export const teamMembers: TeamMembersInfo[] = [
   {
-    name: "Ravi Sharma",
-    role: "Electrician",
-    experience: "5+ years",
-    desc: "Expert in electrical wiring, inverter installation, and safety checks.",
-    profile: sourabpic,
-   
+    name: "Brijesh Kumar",
+    role: "Senior AC Technician",
+    experience: "4+ years",
+    desc: "Expert in AC repair, installation, electrical wiring, and safety checks.",
+    profile: BrijeshImg,
   },
   {
-    name: "Pooja Verma",
-    role: "Salon Expert",
-    experience: "4+ years",
-    desc: "Professional in bridal makeup, hair styling, and home salon services.",
-    profile: sourabpic,
-   
+    name: "Ayush Beniwal",
+    role: "AC & Fridge Technician",
+    experience: "1+ years",
+    desc: "Specialist in AC servicing, fridge repair, cooling system troubleshooting, and maintenance.",
+    profile: AyushImg,
   },
   {
-    name: "Pooja Verma",
-    role: "Salon Expert",
+    name: "Sourab Kumar",
+    role: "Senior RAC Technician",
     experience: "4+ years",
-    desc: "Professional in bridal makeup, hair styling, and home salon services.",
-    profile: sourabpic,
-   
+    desc: "Experienced in residential air conditioning (RAC) systems, installation, and advanced fault diagnosis.",
+    profile: sourabTechImg,
   },
   {
-    name: "Pooja Verma",
-    role: "Salon Expert",
-    experience: "4+ years",
-    desc: "Professional in bridal makeup, hair styling, and home salon services.",
-    profile: sourabpic,
-   
-  },
-  {
-    name: "Pooja Verma",
-    role: "Salon Expert",
-    experience: "4+ years",
-    desc: "Professional in bridal makeup, hair styling, and home salon services.",
-    profile: sourabpic,
-   
-  },
-  {
-    name: "Pooja Verma",
-    role: "Salon Expert",
-    experience: "4+ years",
-    desc: "Professional in bridal makeup, hair styling, and home salon services.",
-    profile: sourabpic,
-   
-  },
-  {
-    name: "Pooja Verma",
-    role: "Salon Expert",
-    experience: "4+ years",
-    desc: "Professional in bridal makeup, hair styling, and home salon services.",
-    profile: sourabpic,
-   
-  },
-  {
-    name: "Pooja Verma",
-    role: "Salon Expert",
-    experience: "4+ years",
-    desc: "Professional in bridal makeup, hair styling, and home salon services.",
-    profile: sourabpic,
-   
-  },
-  {
-    name: "Pooja Verma",
-    role: "Salon Expert",
-    experience: "4+ years",
-    desc: "Professional in bridal makeup, hair styling, and home salon services.",
-    profile: sourabpic,
-   
-  },
-  {
-    name: "Pooja Verma",
-    role: "Salon Expert",
-    experience: "4+ years",
-    desc: "Professional in bridal makeup, hair styling, and home salon services.",
-    profile: sourabpic,
-   
+    name: "Nakul Kumar",
+    role: "Junior AC Technician",
+    experience: "1+ years",
+    desc: "Assists in AC installation, routine maintenance, and basic electrical repairs.",
+    profile: NakulImg,
   },
 ];

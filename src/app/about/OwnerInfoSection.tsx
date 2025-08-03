@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const OwnerInfoSection = () => {
   return (
-    <section className="relative py-20 bg-gradient-to-br from-[#fff0f6] via-[#ffe6f0] to-[#fff8fb] overflow-hidden">
+    <section className="relative py-10 bg-gradient-to-br from-[#fff0f6] via-[#ffe6f0] to-[#fff8fb] overflow-hidden">
       {/* Decorative Background Circles */}
       <div className="absolute top-10 left-10 w-32 h-32 bg-pink-200 rounded-full blur-[100px] opacity-40"></div>
       <div className="absolute bottom-10 right-10 w-40 h-40 bg-[#AF0D5A] rounded-full blur-[120px] opacity-20"></div>
@@ -16,12 +16,11 @@ const OwnerInfoSection = () => {
 
         {/* Profile Image */}
         <div className="relative inline-block">
-          <div className="absolute inset-0 bg-gradient-to-tr from-[#AF0D5A] to-pink-400 rounded-full blur-lg opacity-30 animate-pulse"></div>
           <Image
             src={ownerInfo.profile}
             alt={ownerInfo.name}
-            width={180}
-            height={180}
+            width={200}
+            height={200}
             className="rounded-full mx-auto border-[5px] border-[#AF0D5A] shadow-lg object-cover hover:scale-105 transition-transform duration-300"
           />
         </div>

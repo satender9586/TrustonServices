@@ -3,7 +3,7 @@ import { FaMapMarkerAlt } from 'react-icons/fa'
 
 const LocationSection = () => {
   return (
-    <section className="relative py-20 bg-gradient-to-br from-[#fff0f6] via-[#ffe6f0] to-[#fff8fb] overflow-hidden">
+    <section className="relative py-10 bg-gradient-to-br from-[#fff0f6] via-[#ffe6f0] to-[#fff8fb] overflow-hidden">
   {/* Decorative Blur Circles */}
   <div className="absolute top-20 left-20 w-48 h-48 bg-pink-200 rounded-full blur-[120px] opacity-25"></div>
   <div className="absolute bottom-10 right-10 w-56 h-56 bg-[#AF0D5A] rounded-full blur-[150px] opacity-20"></div>
