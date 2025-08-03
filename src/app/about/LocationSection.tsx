@@ -10,12 +10,12 @@ const LocationSection = () => {
 
   <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
     {/* Heading */}
-    <h2 className="text-3xl sm:text-4xl font-serif font-extrabold text-[#AF0D5A] mb-3 drop-shadow-sm">
+    <h2 className="text-[24px] sm:text-4xl md:leading-12  tracking-[1.5px] md:tracking-[2px] md:font-semibold text-[#AF0D5A] mb-2">
       We Proudly Serve
     </h2>
 
     {/* Subtext */}
-    <p className="text-gray-700 text-base sm:text-lg mb-12 font-serif max-w-2xl mx-auto leading-relaxed">
+    <p className="text-[15px] tracking-wide sm:text-[16px] text-[#555] leading-relaxed mb-2">
       Bringing top-quality services to your doorstep with professionalism and care — 
       across major cities in NCR.
     </p>
