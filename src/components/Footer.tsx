@@ -1,7 +1,8 @@
-import { CiLocationOn, CiMail, CiPhone, CiYoutube } from "react-icons/ci";
+import {  CiMail, CiPhone, CiYoutube } from "react-icons/ci";
 import { SlSocialFacebook } from "react-icons/sl";
 import { FaInstagram } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io5";
+import { FaLocationDot } from "react-icons/fa6";
 import { Button } from "./ui/button";
 import Image from "next/image";
 import Logo from "../assests/Logo2.png";
@@ -11,10 +12,10 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-b from-[#fefcfc] via-[#f8fbfc] to-[#eef5f7] text-[#444] pt-5 sm:pt-8 border-t border-gray-200">
       <div className="container mx-auto px-4 sm:px-10 pb-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-10 border-b border-gray-200">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 pb-5 md-pb-10 border-b border-gray-200">
           <div>
             <h2 className="text-[#111] font-bold mb-4 text-[20px] tracking-wide ">
-              Our Services
+              Services Near Me
             </h2>
             <ul className="space-y-2 text-sm text-[#666]">
               {[
@@ -37,14 +38,14 @@ const Footer = () => {
 
           <div>
             <h2 className="text-[#111] font-bold mb-4 text-[20px] tracking-wide">
-              Quick Links
+              Useful Links
             </h2>
-            <ul className="space-y-2 text-sm text-[#666]">
+            <ul className="text-sm text-[#666]">
               {["Home", "About", "Contact", "Feedback"].map((item, i) => (
                 <Link href={item==="Home" ? "/" : item.toLocaleLowerCase()} key={i}>
                   <li
                     
-                    className="hover:text-[#AF0D5A] text-[15px] tracking-wide transition-colors duration-200 cursor-pointer"
+                    className="hover:text-[#AF0D5A] mb-1.5 text-[15px] tracking-wide transition-colors duration-200 cursor-pointer"
                   >
                     {item}
                   </li>
@@ -55,11 +56,11 @@ const Footer = () => {
 
           <div>
             <h2 className="text-[#111] font-bold mb-4 text-[20px] tracking-wide">
-              Get in Touch
+             Contact Details
             </h2>
             <div className="space-y-3 text-sm text-[#555] text-[15px] tracking-wide">
               <div className="flex items-start gap-3">
-                <CiLocationOn className="text-[35px] mt-1 text-[#AF0D5A]" />
+                <FaLocationDot className="text-xl mt-1 text-[#AF0D5A]" />
                 <p>Holambi Kalan Metro Vihar, Near Alipur, Delhi 110082</p>
               </div>
               <div className="flex items-start gap-3">

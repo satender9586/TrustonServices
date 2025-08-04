@@ -12,7 +12,10 @@ const FeebackSection = () => {
               What Our Clients Say
             </h2>
 
-            <p className="text-[15px] tracking-wide sm:text-[16px] text-[#555] leading-relaxed pb-4">
+            <p className="md:hidden text-[15px] tracking-wide sm:text-[16px] text-[#555] leading-relaxed pb-4">
+              Our customers love us for our quality, professionalism,
+            </p>
+            <p className="hidden md:block text-[15px] tracking-wide sm:text-[16px] text-[#555] leading-relaxed pb-4">
               Our customers love us for our quality, professionalism, and
               on-time service.
             </p>

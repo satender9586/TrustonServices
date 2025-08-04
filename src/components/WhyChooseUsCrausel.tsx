@@ -17,13 +17,13 @@ export const WhyChooseUsCrausel: React.FC<WhyChooseUsCrauselProps> = ({ data }) 
       }}
       className="w-full"
     >
-      <CarouselContent className="md:py-4 ">
+      <CarouselContent className="md:pt-4 ">
         {data.map((items, index) => (
           <CarouselItem
             key={index}
             className="basis-1/2 sm:basis-1/2 lg:basis-1/3"
           >
-            <div className="shadow-sm bg-white mb-3 px-5 rounded-[7px] min-h-[150px] border border-transparent hover:border-[#AF0D5A] hover:shadow-xl hover:-translate-y-2 transition-all duration-300  p-2 md:6">
+            <div className="bg-white p-5 sm:p-7 rounded-xl shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300 border-t-4 border-[#AF0D5A]   hover:-translate-y-2  min-h-[150px]  ">
               <div className="flex flex-col items-center text-center gap-2 md:gap-4">
                 
                 {/* Icon */}
@@ -32,12 +32,12 @@ export const WhyChooseUsCrausel: React.FC<WhyChooseUsCrauselProps> = ({ data }) 
                 </div>
 
                 {/* Title */}
-                <h3 className="text-[18px] sm:text-xl font-bold text-gray-800 hover:text-[#AF0D5A] transition-colors">
+                <h3 className="text-base sm:text-lg  font-semibold text-gray-800   tracking-wide  group-hover:text-[#AF0D5A] transition-colors">
                   {items.title}
                 </h3>
 
                 {/* Description */}
-                <p className="hidden md:block font-serif text-sm sm:text-[16px] tracking-wide text-[#666] leading-relaxed px-2">
+                <p className="hidden md:block text-sm sm:text-[16px] tracking-wide font-serif text-gray-600 leading-snug sm:leading-relaxed px-2">
                   {items.desc}
                 </p>
               </div>

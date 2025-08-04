@@ -11,11 +11,12 @@ const ServiceItem = () => {
     WithTrandingLableServiceCard(ServiceItemCard);
 
   const params = useParams();
-  const slug = params.slug;
+  const slug = params?.slug;
 
   const findCategory = ServicesItems?.filter((item) => item.path == slug);
   const categories = findCategory[0]?.categories;
   const titleName = findCategory[0]?.itemname;
+
 
   return (
     <Layout>

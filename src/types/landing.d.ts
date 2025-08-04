@@ -65,5 +65,6 @@ export interface Service {
   itemUrl: StaticImageData;
   itemDesc: string;
   path: string;
+  trending:boolean,
   categories: ServiceCategory[];
 }

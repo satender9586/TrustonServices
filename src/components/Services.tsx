@@ -2,8 +2,12 @@ import React from "react";
 import { ServicesItems } from "../constants/ServicesFakeData";
 import ServiceItemCard from "./ServiceItemCard";
 import Link from "next/link";
+import WithTrandingLableServiceCard from "@/HOC/WithTrandingLableServiceCard";
 
 const Services = () => {
+  const ServiceItemCardWithLabel =  WithTrandingLableServiceCard(ServiceItemCard);
+
+
   return (
     <section className="bg-gradient-to-b from-[#EBF7FD] via-white to-[#FDEBF3]  py-5 sm:py-8">
       <div className="container mx-auto px-4 sm:px-10 pb-4">
@@ -13,7 +17,7 @@ const Services = () => {
             <span className="hidden md:inline-block">for Delhi NCR</span>
           </h2>
 
-          <p className="block md:hidden text-[14px] sm:text-[15px] md:text-[16px] tracking-wide text-[#555] leading-relaxed text-center px-9 sm:px-4">
+          <p className="block md:hidden text-[14px] sm:text-[15px] md:text-[16px] tracking-wide text-gray-800 leading-relaxed text-center px-9 sm:px-4">
             Reliable AC, fridge & washing machine service right at your doorstep
             in Delhi NCR.
           </p>
@@ -29,18 +33,24 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-8 ">
-          {ServicesItems?.map((service) => (
-            <Link href={`/services/${service.path}`} key={service.itemname}>
-              <div  className="group">
-                <ServiceItemCard
-                  itemUrl={service.itemUrl}
-                  itemName={service.itemname}
-                  itemDesc={service.itemDesc}
-                />
-              </div>
-            </Link>
-          ))}
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-5">
+          {ServicesItems?.map((service) => {
+            const CardComponent = service.trending
+              ? ServiceItemCardWithLabel
+              : ServiceItemCard;
+
+            return (
+              <Link href={`/services/${service.path}`} key={service.itemname}>
+                <div className="group">
+                  <CardComponent
+                    itemUrl={service.itemUrl}
+                    itemName={service.itemname}
+                    itemDesc={service.itemDesc}
+                  />
+                </div>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>

@@ -11,6 +11,7 @@ export const ServicesItems: Service[] = [
     itemname: "Air Conditioning",
     itemUrl: ACIMG,
     path: "air-condition",
+    trending : true,
     itemDesc: "Reliable AC installation, repair, and seasonal servicing by certified experts.",
     categories: [
       {
@@ -27,7 +28,7 @@ export const ServicesItems: Service[] = [
         itemname: "Window Air Conditioner",
         itemUrl: ACIMG,
         itemDesc: "Efficient service for window AC units.",
-         trending : false
+        trending : false
       },
       {
         name: "Central AC",
@@ -51,6 +52,7 @@ export const ServicesItems: Service[] = [
     itemname: "Washing Machine",
     itemUrl: WASHINGIMG,
     path: "washing-machine",
+    trending : false,
     itemDesc: "Professional washing machine repair and maintenance for all major brands.",
     categories: [
       {
@@ -91,6 +93,7 @@ export const ServicesItems: Service[] = [
     itemname: "Plumbing",
     itemUrl: PLUMBIMG,
     path: "plumbing",
+    trending : false,
     itemDesc: "From leaky taps to pipe fittings — fast and affordable plumbing solutions.",
     categories: [
       {
@@ -123,6 +126,7 @@ export const ServicesItems: Service[] = [
     itemname: "Electrician",
     itemUrl: ELECTIMG,
     path: "electrician",
+    trending : false,
     itemDesc: "Safe and efficient electrical repairs, fittings, and troubleshooting services.",
     categories: [
       {
@@ -155,6 +159,7 @@ export const ServicesItems: Service[] = [
     itemname: "Salon & Parlor",
     itemUrl: ELECTIMG, 
     path: "salon-parlor",
+    trending : false,
     itemDesc: "Professional salon and beauty services at your doorstep.",
     categories: [
       {
@@ -187,6 +192,7 @@ export const ServicesItems: Service[] = [
     itemname: "Delivery",
     itemUrl: ELECTIMG, 
     path: "delivery",
+    trending : false,
     itemDesc: "Fast and reliable delivery services for packages and groceries.",
     categories: [
       {

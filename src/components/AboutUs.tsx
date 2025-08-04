@@ -1,60 +1,73 @@
 import React from "react";
+import { FaTools, FaCertificate, FaHeadset } from "react-icons/fa";
 import EnqueryPopUp from "./EnqueryPopUp";
 
 const AboutUs = () => {
+  const stats = [
+    { label: "7+ Years", sub: "Industry Experience", icon: <FaTools /> },
+    { label: "Certified", sub: "Expert Technicians", icon: <FaCertificate /> },
+    { label: "24/7", sub: "Customer Support", icon: <FaHeadset /> },
+  ];
+
   return (
-    <section className="relative bg-gradient-to-br from-[#ffffff] via-[#fff3f8] to-[#fdf4f8]  py-5 sm:py-8 overflow-hidden">
-      <div className="container mx-auto px-4 sm:px-10  text-center max-w-3xl">
-        <div className="max-w-3xl mx-auto text-center mb-5 md:mb-8">
-          <h2 className="text-[24px] sm:text-4xl md:leading-12  tracking-[1.5px] md:tracking-[2px] md:font-semibold text-[#AF0D5A] mb-2 md:mb-2">
-            Who We Are
-          </h2>
+    <section className="relative bg-gradient-to-br from-white via-[#fff3f8] to-[#fdf4f8] py-10 sm:py-16 overflow-hidden">
+      <div className="container mx-auto px-4 sm:px-10 text-center max-w-5xl">
+        {/* Heading */}
+        <h2 className="text-[26px] sm:text-4xl  tracking-tight text-[#AF0D5A] mb-2">
+          Who We Are
+        </h2>
 
-          <p className="block md:hidden text-[14px] sm:text-[15px] md:text-[16px] tracking-wide text-[#555] leading-relaxed text-center px-9 sm:px-4">
-            At{" "}
-            <span className="text-[#AF0D5A] font-semibold">
-              Trust On Services
-            </span>
-            , we provide expert repair, installation, and maintenance.
-          </p>
-          <p className="hidden sm:block text-[15px] tracking-wide sm:text-[16px] text-[#555] leading-relaxed ">
-            At{" "}
-            <span className="text-[#AF0D5A] font-semibold">
-              Trust On Services
-            </span>
-            , we provide expert repair, installation, and maintenance for all
-            major home appliances. With <strong>7+ years</strong> of experience,
-            our certified technicians ensure fast
-          </p>
+        {/* Description */}
+        <p className="md:hidden text-[15px] sm:text-lg text-[#555] leading-relaxed max-w-3xl mx-auto mb-10">
+          At{" "}
+          <span className="text-[#AF0D5A] font-semibold">
+            Trust On Services
+          </span>
+          , we provide expert repair, installation, and maintenance
+        </p>
+        <p className="hidden md:block text-[15px] sm:text-lg text-[#555] leading-relaxed max-w-3xl mx-auto mb-10">
+          At{" "}
+          <span className="text-[#AF0D5A] font-semibold">
+            Trust On Services
+          </span>
+          , we provide expert repair, installation, and maintenance for all
+          major home appliances. With <strong>7+ years</strong> of experience,
+          our certified technicians ensure **fast, reliable, and professional
+          service** every time.
+        </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-8 mt-8">
-            {[
-              { label: "7+ Years", sub: "Industry Experience" },
-              { label: "Certified", sub: "Expert Technicians" },
-              { label: "24/7", sub: "Customer Support" },
-            ].map((item, i) => (
-              <div
-                key={i}
-                className="shadow-sm bg-white mb-3 px-5 rounded-[7px]  p-6  hover:shadow-lg transition-all"
-              >
-                <span className="block text-[#AF0D5A] text-lg tracking-[1.5px] font-bold pb-1">
+        {/* Stats */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-10 mb-10">
+          {stats.map((item, i) => (
+            <div
+              key={i}
+              className="bg-white p-5 sm:p-7 rounded-xl shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300 border-t-4 border-[#AF0D5A]"
+            >
+              <div className="flex flex-col items-center">
+                <div className="text-[#AF0D5A] text-4xl mb-3 group-hover:scale-110 transition-transform">
+                  {item.icon}
+                </div>
+                <span className="block text-base sm:text-lg  font-semibold text-gray-800 mb-1  tracking-wide  group-hover:text-[#AF0D5A] transition-colors">
                   {item.label}
                 </span>
-                <p className="text-[15px] tracking-wide text-[#555]">{item.sub}</p>
+                <p className="sm:text-[16px] tracking-wide font-serif text-gray-600 leading-snug sm:leading-relaxed">
+                  {item.sub}
+                </p>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
+        </div>
 
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-8">
-            <EnqueryPopUp>
-              <button className="px-6 py-3 bg-[#AF0D5A] hover:bg-[#92144b] transition-colors text-white rounded-full shadow-md text-base font-semibold tracking-wide">
-                Book a Service
-              </button>
-            </EnqueryPopUp>
-            <span className="text-sm text-[#777] font-serif">
-              Certified • Fast • Reliable
-            </span>
-          </div>
+        {/* CTA */}
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-5">
+          <EnqueryPopUp>
+            <button className="px-8 py-3 bg-[#AF0D5A] hover:bg-[#92144b] transition-colors text-white rounded-full shadow-lg text-base font-semibold tracking-wide">
+              Book a Service
+            </button>
+          </EnqueryPopUp>
+          <span className="text-sm text-[#777] font-serif">
+            Certified • Fast • Reliable
+          </span>
         </div>
       </div>
     </section>

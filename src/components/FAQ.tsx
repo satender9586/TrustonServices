@@ -32,13 +32,13 @@ const FAQ = () => {
               <AccordionItem
                 value={title}
                 key={title}
-                className="shadow-sm bg-white mb-3 px-5 rounded-[7px] border-b-0"
+                className=" hover:shadow-xl hover:-translate-y-1 transition-all duration-300  shadow-sm bg-white  mb-2 px-5 rounded-[7px] border-b-0"
               >
-                <AccordionTrigger className="tracking-wide text-[#363535] text-[14px] flex items-center ">
+                <AccordionTrigger className="text-base sm:text-md  font-semibold text-gray-800 mb-1  tracking-wide  group-hover:text-[#AF0D5A] transition-colors flex items-center ">
                  { "Q" + ")"+ " "}{ title}
                 </AccordionTrigger>
                 <AccordionContent>
-                  <p className="text-start text-[#6e6e6e] text-[14px] font-sans tracking-wide">
+                  <p className="text-start text-sm sm:text-[16px] tracking-wide font-serif text-gray-600 leading-snug sm:leading-relaxed">
                     {desc}
                   </p>
                 </AccordionContent>

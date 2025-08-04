@@ -16,10 +16,10 @@ const ServiceItemCard: React.FC<ServiceCardProps> = ({ itemUrl, itemName, itemDe
       </div>
 
       <div className="p-3 md:p-5">
-        <h3 className="text-[17px]  sm:text-xl font-serif tracking-wide text-gray-800 mb-2 group-hover:text-[#AF0D5A] transition-colors">
+        <h3 className="text-base sm:text-lg  font-semibold text-gray-800 mb-1  tracking-wide  group-hover:text-[#AF0D5A] transition-colors">
           {itemName}
         </h3>
-        <p className="hidden md:block text-sm sm:text-[15px]  text-[#666] group-hover:text-[#AF0D5A] transition-colors leading-relaxed">
+        <p className="hidden md:block text-sm sm:text-[16px] tracking-wide font-serif text-gray-600 leading-snug sm:leading-relaxed">
           {itemDesc}
         </p>
         <div className="md:mt-3 md:h-[3px] w-0 bg-[#AF0D5A] group-hover:w-full transition-all duration-300"></div>

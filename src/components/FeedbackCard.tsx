@@ -4,7 +4,7 @@ import { IoIosStar } from "react-icons/io";
 
 const FeedbackCard = () => {
   return (
-    <div className="  shadow-sm bg-white mb-3 px-5 rounded-[7px]  max-w-sm p-6  border border-gray-100  hover:shadow-2xl hover:-translate-y-2 hover:bg-[#fff8f9] transition-all duration-300 dark:bg-gray-800 dark:border-gray-700">
+    <div className="bg-white p-5 sm:p-7 rounded-xl shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300 border-t-4 border-[#AF0D5A]   hover:-translate-y-2   ">
       
       {/* Quote + Stars */}
       <div className="flex justify-between items-start mb-4">

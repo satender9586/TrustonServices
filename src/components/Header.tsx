@@ -26,12 +26,12 @@ const Header = () => {
           </div>
 
           {/* Title */}
-          <h1 className="font-semibold text-[29px] leading-12 md:leading-17 sm:text-[34px]  md:text-[42px] lg:text-[54px] tracking-[1.1px] text-[#AF0D5A] px-2">
+          <h1 className="font-semibold text-[29px] leading-10.5 md:leading-17 sm:text-[34px]  md:text-[42px] lg:text-[58px] tracking-[1.1px] text-[#AF0D5A] px-2">
             Expert AC Repair Services at Your Doorstep
           </h1>
 
           {/* Description */}
-          <p className="text-[17.5px] leading-8 md:leading-8 tracking-[1px] sm:text-[16px] md:text-[17px] text-[#555] px-3">
+          <p className="text-[17.5px] font-serif leading-8 md:leading-9  md:tracking-[1px] sm:text-[16px] md:text-[17px] text-gray-800 px-4 md-px-3">
             Fast, reliable & affordable{" "}
             <strong>AC repair and maintenance</strong> anywhere in Delhi NCR.
             Book trained professionals
@@ -42,7 +42,7 @@ const Header = () => {
 
           {/* Star Rating */}
           <div className="flex flex-col sm:flex-row items-center gap-3  sm:gap-4 justify-center">
-            <div className="flex text-[#FFD700] gap-3 sm:gap-0 text-[18px] sm:text-[20px]">
+            <div className="flex text-[#FFD700] gap-1.5 sm:gap-0 text-[18px] sm:text-[20px]">
               {[...Array(5)].map((_, i) => (
                 <FaStar key={i} />
               ))}
