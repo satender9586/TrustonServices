@@ -3,8 +3,8 @@ import EnqueryPopUp from "./EnqueryPopUp";
 
 const AboutUs = () => {
   return (
-    <section className="relative bg-gradient-to-br from-[#ffffff] via-[#fff3f8] to-[#fdf4f8]   py-5 sm:py-8 overflow-hidden">
-      <div className="container mx-auto px-4 sm:px-10 pb-4 text-center max-w-3xl">
+    <section className="relative bg-gradient-to-br from-[#ffffff] via-[#fff3f8] to-[#fdf4f8]  py-5 sm:py-8 overflow-hidden">
+      <div className="container mx-auto px-4 sm:px-10  text-center max-w-3xl">
         <div className="max-w-3xl mx-auto text-center mb-5 md:mb-8">
           <h2 className="text-[24px] sm:text-4xl md:leading-12  tracking-[1.5px] md:tracking-[2px] md:font-semibold text-[#AF0D5A] mb-2 md:mb-2">
             Who We Are
@@ -35,7 +35,7 @@ const AboutUs = () => {
             ].map((item, i) => (
               <div
                 key={i}
-                className="p-6 bg-white rounded-xl shadow hover:shadow-lg transition-all"
+                className="shadow-sm bg-white mb-3 px-5 rounded-[7px]  p-6  hover:shadow-lg transition-all"
               >
                 <span className="block text-[#AF0D5A] text-lg tracking-[1.5px] font-bold pb-1">
                   {item.label}
