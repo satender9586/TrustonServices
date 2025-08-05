@@ -33,13 +33,10 @@ const About = () => {
               all just a click away.
             </p>
 
-            <p className="hidden sm:block text-gray-700 font-serif text-lg leading-relaxed px-0">
+            <p className="hidden sm:block text-gray-700 font-serif text-lg leading-relaxed px-0 ">
               Based in NCR, <strong>TrustOnServices</strong> is your trusted
               home service partner. From appliance repair to deep cleaning, we
               deliver reliable and affordable solutions — all just a click away.
-              <br />
-              We’ve served <strong>1,000+ happy clients</strong> across Delhi,
-              Noida & Gurugram with our 50+ trained professionals.
             </p>
           </div>
 
@@ -76,15 +73,15 @@ const About = () => {
             />
           </div>
         </div>
-      </section>
-       {/* Owener info */}
+        {/* Owener info */}
         <OwnerInfoSection />
         {/* team Section */}
         <TeamSection />
         {/* Locaiotn */}
-        <LocationSection />
-        {/* faq */}
-        <FAQ />
+      </section>
+      <LocationSection />
+      {/* faq */}
+      <FAQ />
     </Layout>
   );
 };

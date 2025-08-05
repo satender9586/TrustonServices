@@ -30,7 +30,7 @@ const FeedbackCard = () => {
         <p className="font-serif text-[18px] font-bold text-[#AF0D5A] mb-0">
           Satish Kumar
         </p>
-        <p className="text-sm text-[#777]">New Delhi</p>
+        <p className="text-sm text-[#777] font-serif">New Delhi</p>
       </div>
     </div>
   );

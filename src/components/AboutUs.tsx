@@ -10,22 +10,22 @@ const AboutUs = () => {
   ];
 
   return (
-    <section className="relative bg-gradient-to-br from-white via-[#fff3f8] to-[#fdf4f8] py-10 sm:py-16 overflow-hidden">
+    <section className="bg-gradient-to-b from-[#EBF7FD] via-white to-[#FDEBF3] py-10 sm:py-16 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-10 text-center max-w-5xl">
         {/* Heading */}
-        <h2 className="text-[26px] sm:text-4xl  tracking-tight text-[#AF0D5A] mb-2">
+        <h2 className="text-[24px] sm:text-4xl md:leading-12  tracking-[1.5px] md:tracking-[2px] md:font-semibold text-[#AF0D5A] mb-2 md:mb-2">
           Who We Are
         </h2>
 
         {/* Description */}
-        <p className="md:hidden text-[15px] sm:text-lg text-[#555] leading-relaxed max-w-3xl mx-auto mb-10">
+        <p className="md:hidden font-serif text-[15px] sm:text-lg text-[#555] leading-relaxed max-w-3xl mx-auto mb-10">
           At{" "}
           <span className="text-[#AF0D5A] font-semibold">
             Trust On Services
           </span>
           , we provide expert repair, installation, and maintenance
         </p>
-        <p className="hidden md:block text-[15px] sm:text-lg text-[#555] leading-relaxed max-w-3xl mx-auto mb-10">
+        <p className="hidden font-serif md:block text-[15px] tracking-wide sm:text-[16px] text-[#555] leading-relaxed mb-6">
           At{" "}
           <span className="text-[#AF0D5A] font-semibold">
             Trust On Services
@@ -50,7 +50,7 @@ const AboutUs = () => {
                 <span className="block text-base sm:text-lg  font-semibold text-gray-800 mb-1  tracking-wide  group-hover:text-[#AF0D5A] transition-colors">
                   {item.label}
                 </span>
-                <p className="sm:text-[16px] tracking-wide font-serif text-gray-600 leading-snug sm:leading-relaxed">
+                <p className="sm:text-[14px] tracking-wide font-serif text-gray-600 leading-snug sm:leading-relaxed">
                   {item.sub}
                 </p>
               </div>

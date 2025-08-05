@@ -4,11 +4,8 @@ import Image from "next/image";
 
 const OwnerInfoSection = () => {
   return (
-    <section className="relative py-10 bg-gradient-to-br from-[#fff0f6] via-[#ffe6f0] to-[#fff8fb] overflow-hidden">
-      {/* Decorative Background Circles */}
-      <div className="absolute top-10 left-10 w-32 h-32 bg-pink-200 rounded-full blur-[100px] opacity-40"></div>
-      <div className="absolute bottom-10 right-10 w-40 h-40 bg-[#AF0D5A] rounded-full blur-[120px] opacity-20"></div>
-
+    <section className="pb-0 md:py-10  overflow-hidden">
+   
       <div className="text-center max-w-2xl mx-auto relative z-10">
         <h2 className="text-4xl sm:text-5xl font-extrabold font-serif text-[#AF0D5A] mb-6 drop-shadow-sm">
           Meet Our Founder

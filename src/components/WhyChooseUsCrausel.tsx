@@ -23,7 +23,7 @@ export const WhyChooseUsCrausel: React.FC<WhyChooseUsCrauselProps> = ({ data }) 
             key={index}
             className="basis-1/2 sm:basis-1/2 lg:basis-1/3"
           >
-            <div className="bg-white p-5 sm:p-7 rounded-xl shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300 border-t-4 border-[#AF0D5A]   hover:-translate-y-2  min-h-[150px]  ">
+            <div className="bg-white min-h-[160px] p-5 sm:p-7 rounded-xl shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300 border-t-4 border-[#AF0D5A]   hover:-translate-y-2    ">
               <div className="flex flex-col items-center text-center gap-2 md:gap-4">
                 
                 {/* Icon */}
