@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "@/components/Layout";
-import FeedbackCard from "@/components/FeedbackCard";
+import FeedbackCard from "@/components/Cards/FeedbackCard";
 
 const Feedback = () => {
   return (

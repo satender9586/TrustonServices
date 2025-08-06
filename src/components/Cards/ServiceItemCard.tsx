@@ -5,7 +5,7 @@ import { ServiceCardProps } from "@/types/landing";
 const ServiceItemCard: React.FC<ServiceCardProps> = ({ itemUrl, itemName, itemDesc }) => {
   return (
     <div className=" bg-white rounded-[20px_5px_20px_5px] shadow-md overflow-hidden border border-transparent hover:border-[#AF0D5A] hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group">
-      <div className="w-full h-[130px] sm:h-[220px] md:h-[250px] relative overflow-hidden">
+      <div className="w-full h-[130px] sm:h-[220px] md:h-[230px] relative overflow-hidden">
         <Image
           alt={`${itemName} service image`}
           src={itemUrl}

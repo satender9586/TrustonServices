@@ -1,6 +1,6 @@
 import React from "react";
 import { ServicesItems } from "../constants/ServicesFakeData";
-import ServiceItemCard from "./ServiceItemCard";
+import ServiceItemCard from "./Cards/ServiceItemCard";
 import Link from "next/link";
 import WithTrandingLableServiceCard from "@/HOC/WithTrandingLableServiceCard";
 

@@ -66,5 +66,4 @@ export interface Service {
   itemDesc: string;
   path: string;
   trending:boolean,
-  categories: ServiceCategory[];
 }

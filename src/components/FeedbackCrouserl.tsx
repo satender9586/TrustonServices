@@ -6,7 +6,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { WhyChooseUsCrauselProps } from "@/types/landing";
-import FeedbackCard from "./FeedbackCard";
+import FeedbackCard from "./Cards/FeedbackCard";
 import Link from "next/link";
 
 const FeedbackCrouserl: React.FC<WhyChooseUsCrauselProps> = ({ data }) => {

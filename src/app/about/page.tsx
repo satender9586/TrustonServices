@@ -8,7 +8,7 @@ import {
   FaTools,
   FaShieldAlt,
 } from "react-icons/fa";
-import HiglightCart from "@/components/HiglightCart";
+import HiglightCart from "@/components/Cards/HiglightCart";
 import TeamSection from "./TeamSection";
 import LocationSection from "./LocationSection";
 import OwnerInfoSection from "./OwnerInfoSection";

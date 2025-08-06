@@ -1,227 +1,187 @@
 import ACIMG from "../assests/actechnicial.jpg";
-import WASHINGIMG from "../assests/washing.jpg"
-import PLUMBIMG from "../assests/plumber.jpg"
-import ELECTIMG from "../assests/electrician.jpg"
+import WASHINGIMG from "../assests/washing.jpg";
+import PLUMBIMG from "../assests/plumber.jpg";
+import ELECTIMG from "../assests/electrician.jpg";
 import { Service } from "@/types/landing";
-
-
 
 export const ServicesItems: Service[] = [
   {
     itemname: "Air Conditioning",
     itemUrl: ACIMG,
     path: "air-condition",
-    trending : true,
-    itemDesc: "Reliable AC installation, repair, and seasonal servicing by certified experts.",
-    categories: [
-      {
-        name: "Split AC",
-        path: "split-ac",
-        itemname: "Split Air Conditioner",
-        itemUrl: ACIMG,
-        itemDesc: "Installation and repair of split AC units.",
-        trending : true
-      },
-      {
-        name: "Window AC",
-        path: "window-ac",
-        itemname: "Window Air Conditioner",
-        itemUrl: ACIMG,
-        itemDesc: "Efficient service for window AC units.",
-        trending : false
-      },
-      {
-        name: "Central AC",
-        path: "central-ac",
-        itemname: "Central Air Conditioner",
-        itemUrl: ACIMG,
-        itemDesc: "Complete solutions for central AC systems.",
-         trending : false
-      },
-      {
-        name: "Portable AC",
-        path: "portable-ac",
-        itemname: "Portable Air Conditioner",
-        itemUrl: ACIMG,
-        itemDesc: "Maintenance for portable AC units.",
-         trending : false
-      }
-    ]
+    trending: true,
+    itemDesc:
+      "Reliable AC installation, repair, and seasonal servicing by certified experts.",
+   
   },
   {
     itemname: "Washing Machine",
     itemUrl: WASHINGIMG,
     path: "washing-machine",
-    trending : false,
-    itemDesc: "Professional washing machine repair and maintenance for all major brands.",
-    categories: [
-      {
-        name: "Front Load",
-        path: "front-load",
-        itemname: "Front Load Washing Machine",
-        itemUrl: WASHINGIMG,
-        itemDesc: "Expert repair for front load washing machines.",
-         trending : false
-      },
-      {
-        name: "Top Load",
-        path: "top-load",
-        itemname: "Top Load Washing Machine",
-        itemUrl: WASHINGIMG,
-        itemDesc: "Maintenance for top load washing machines.",
-         trending : false
-      },
-      {
-        name: "Semi Automatic",
-        path: "semi-automatic",
-        itemname: "Semi Automatic Washing Machine",
-        itemUrl: WASHINGIMG,
-        itemDesc: "Service for semi-automatic washing machines.",
-         trending : false
-      },
-      {
-        name: "Fully Automatic",
-        path: "fully-automatic",
-        itemname: "Fully Automatic Washing Machine",
-        itemUrl: WASHINGIMG,
-        itemDesc: "Care and repair for fully automatic washing machines.",
-         trending : false
-      }
-    ]
+    trending: false,
+    itemDesc:
+      "Professional washing machine repair and maintenance for all major brands.",
+ 
   },
   {
     itemname: "Plumbing",
     itemUrl: PLUMBIMG,
     path: "plumbing",
-    trending : false,
-    itemDesc: "From leaky taps to pipe fittings — fast and affordable plumbing solutions.",
-    categories: [
-      {
-        name: "Leak Repair",
-        path: "leak-repair",
-        itemname: "Leak Repair Service",
-        itemUrl: PLUMBIMG,
-        itemDesc: "Quick and effective repair of water leaks.",
-         trending : false
-      },
-      {
-        name: "Pipe Installation",
-        path: "pipe-installation",
-        itemname: "Pipe Installation Service",
-        itemUrl: PLUMBIMG,
-        itemDesc: "Professional installation of water and drainage pipes.",
-         trending : false
-      },
-      {
-        name: "Bathroom Fittings",
-        path: "bathroom-fittings",
-        itemname: "Bathroom Fittings Service",
-        itemUrl: PLUMBIMG,
-        itemDesc: "Expert installation of bathroom fixtures and accessories.",
-         trending : false
-      }
-    ]
+    trending: false,
+    itemDesc:
+      "From leaky taps to pipe fittings — fast and affordable plumbing solutions.",
+  
   },
   {
     itemname: "Electrician",
     itemUrl: ELECTIMG,
     path: "electrician",
-    trending : false,
-    itemDesc: "Safe and efficient electrical repairs, fittings, and troubleshooting services.",
-    categories: [
-      {
-        name: "Wiring",
-        path: "wiring",
-        itemname: "Electrical Wiring Service",
-        itemUrl: ELECTIMG,
-        itemDesc: "Installation and maintenance of safe electrical wiring.",
-         trending : false
-      },
-      {
-        name: "Lighting Installation",
-        path: "lighting-installation",
-        itemname: "Lighting Installation Service",
-        itemUrl: ELECTIMG,
-        itemDesc: "Professional installation of home and office lighting.",
-         trending : false
-      },
-      {
-        name: "Appliance Repair",
-        path: "appliance-repair",
-        itemname: "Appliance Repair Service",
-        itemUrl: ELECTIMG,
-        itemDesc: "Troubleshooting and repair of electrical appliances.",
-         trending : false
-      }
-    ]
+    trending: false,
+    itemDesc:
+      "Safe and efficient electrical repairs, fittings, and troubleshooting services.",
+  
   },
   {
     itemname: "Salon & Parlor",
-    itemUrl: ELECTIMG, 
+    itemUrl: ELECTIMG,
     path: "salon-parlor",
-    trending : false,
+    trending: false,
     itemDesc: "Professional salon and beauty services at your doorstep.",
-    categories: [
-      {
-        name: "Haircut",
-        path: "haircut",
-        itemname: "Haircut Service",
-        itemUrl: ELECTIMG,
-        itemDesc: "Expert haircuts for men and women.",
-         trending : false
-      },
-      {
-        name: "Facial",
-        path: "facial",
-        itemname: "Facial Service",
-        itemUrl: ELECTIMG,
-        itemDesc: "Rejuvenating facials for all skin types.",
-         trending : false
-      },
-      {
-        name: "Makeup",
-        path: "makeup",
-        itemname: "Makeup Service",
-        itemUrl: ELECTIMG,
-        itemDesc: "Professional makeup for events and parties.",
-         trending : false
-      }
-    ]
+
   },
   {
     itemname: "Delivery",
-    itemUrl: ELECTIMG, 
+    itemUrl: ELECTIMG,
     path: "delivery",
-    trending : false,
+    trending: false,
     itemDesc: "Fast and reliable delivery services for packages and groceries.",
+   
+  },
+];
+
+export const servicesIdData: Record<string, any> = {
+  "air-condition": {
+    title: "Air Conditioner Repair & Service",
+    description:
+      "Professional doorstep services for Split & Window ACs — maintenance, installation, gas filling, and more.",
+    image: WASHINGIMG,
     categories: [
       {
-        name: "Food Delivery",
-        path: "food-delivery",
-        itemname: "Food Delivery Service",
-        itemUrl: ELECTIMG,
-        itemDesc: "Quick delivery of fresh and hot meals.",
-         trending : false
+        type: "Split AC",
+        services: [
+          {
+            name: "Power Jet Service (Split AC)",
+            price: "₹699",
+            features: [
+              "Improves AC cooling performance",
+              "Check power supply, gas pressure, cooling",
+              "Complete cleaning with water jet, filter, blower, coil etc."
+            ],
+            img: PLUMBIMG
+          },
+          {
+            name: "AC Gas Refill (Split AC)",
+            price: "₹1,499",
+            features: [
+              "Includes gas leak check",
+              "Vacuuming before refill",
+              "Test cooling after service"
+            ],
+            img: PLUMBIMG
+          },
+          {
+            name: "AC Installation (Split AC)",
+            price: "₹1,799",
+            features: [
+              "Mount indoor unit",
+              "Install outdoor compressor",
+              "Pipe fitting and wiring"
+            ],
+            img: PLUMBIMG
+          },
+          {
+            name: "AC Uninstallation (Split AC)",
+            price: "₹999",
+            features: [
+              "Safely remove indoor & outdoor units",
+              "Disconnect gas pipes",
+              "Pack for relocation"
+            ],
+            img: PLUMBIMG
+          }
+        ]
       },
       {
-        name: "Grocery Delivery",
-        path: "grocery-delivery",
-        itemname: "Grocery Delivery Service",
-        itemUrl: ELECTIMG,
-        itemDesc: "Same-day delivery of groceries to your home.",
-         trending : false
+        type: "Window AC",
+        services: [
+          {
+            name: "Power Jet Service (Window AC)",
+            price: "₹599",
+            features: [
+              "Improves AC cooling performance",
+              "Check power supply, gas pressure, cooling",
+              "Complete cleaning with water jet, filter, blower, coil etc."
+            ],
+            img: PLUMBIMG
+          },
+          {
+            name: "AC Gas Refill (Window AC)",
+            price: "₹1,299",
+            features: [
+              "Leakage check",
+              "Vacuum before filling",
+              "Test cooling after refill"
+            ],
+            img: PLUMBIMG
+          },
+          {
+            name: "AC Installation (Window AC)",
+            price: "₹899",
+            features: [
+              "Secure fit into window",
+              "Check electrical connections",
+              "Test cooling"
+            ],
+            img: PLUMBIMG
+          },
+          {
+            name: "AC Uninstallation (Window AC)",
+            price: "₹699",
+            features: [
+              "Safe removal from window",
+              "Disconnect wiring",
+              "Pack for transport"
+            ],
+            img: PLUMBIMG
+          }
+        ]
       },
       {
-        name: "Courier Services",
-        path: "courier-services",
-        itemname: "Courier Service",
-        itemUrl: ELECTIMG,
-        itemDesc: "Secure and fast courier services for packages.",
-         trending : false
+        type: "Cassette AC",
+        services: [
+          {
+            name: "Cassette AC Servicing",
+            price: "₹1,199",
+            features: [
+              "Clean filters and vents",
+              "Check cooling efficiency",
+              "Gas pressure check"
+            ],
+            img: PLUMBIMG
+          },
+          {
+            name: "Cassette AC Gas Refill",
+            price: "₹2,499",
+            features: [
+              "Leak check",
+              "Gas refill with vacuuming",
+              "Test cooling"
+            ],
+            img: PLUMBIMG
+          }
+        ]
       }
     ]
   }
-];
+};
 
-
-  
