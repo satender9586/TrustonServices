@@ -19,7 +19,7 @@ const WhyChoose = () => {
           <p className="hidden sm:block text-[15px] font-serif tracking-wide sm:text-[16px] text-[#555] leading-relaxed ">
             At <span className="text-[#AF0D5A] font-semibold">Trust On Services</span>, we deliver 
             <strong> fast, reliable, and affordable </strong> AC, washing machine, and refrigerator repairs.  
-            With over <strong>5 years of experience</strong>, we’ve built a reputation for excellence across Delhi NCR.
+            With over <strong>5 years of experience</strong>
           </p>
         </div>
 

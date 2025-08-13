@@ -13,7 +13,7 @@ const HiglightCart = ({ icon, title, text }: HighlightProps) => {
       <h4 className="text-base sm:text-lg  font-semibold text-gray-800 mb-1">
         {title}
       </h4>
-      <p className="text-sm sm:text-[16px] tracking-wide font-serif text-gray-600 leading-snug sm:leading-relaxed">
+      <p className="tracking-wide text-sm text-gray-600  space-y-1 leading-snug sm:leading-relaxed">
         {text}
       </p>
     </div>

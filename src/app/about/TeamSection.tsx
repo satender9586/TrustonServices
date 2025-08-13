@@ -39,7 +39,7 @@ const TeamSection = () => {
               </p>
 
               {/* Description */}
-              <p className="text-[15px] sm:text-[16px] tracking-wide font-serif text-gray-600 leading-snug sm:leading-relaxed">
+              <p className="tracking-wide text-sm text-gray-600  space-y-1 leading-snug sm:leading-relaxed">
                 {member.desc}
               </p>
             </div>

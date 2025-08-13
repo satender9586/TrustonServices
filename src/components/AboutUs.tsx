@@ -50,7 +50,7 @@ const AboutUs = () => {
                 <span className="block text-base sm:text-lg  font-semibold text-gray-800 mb-1  tracking-wide  group-hover:text-[#AF0D5A] transition-colors">
                   {item.label}
                 </span>
-                <p className="sm:text-[14px] tracking-wide font-serif text-gray-600 leading-snug sm:leading-relaxed">
+                <p className="tracking-wide text-sm text-gray-600  space-y-1 leading-snug sm:leading-relaxed">
                   {item.sub}
                 </p>
               </div>

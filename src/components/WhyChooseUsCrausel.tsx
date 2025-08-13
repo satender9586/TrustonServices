@@ -37,7 +37,7 @@ export const WhyChooseUsCrausel: React.FC<WhyChooseUsCrauselProps> = ({ data }) 
                 </h3>
 
                 {/* Description */}
-                <p className="hidden md:block text-sm sm:text-[16px] tracking-wide font-serif text-gray-600 leading-snug sm:leading-relaxed px-2">
+                <p className="hidden md:block tracking-wide text-sm text-gray-600  space-y-1 leading-snug sm:leading-relaxed px-2">
                   {items.desc}
                 </p>
               </div>

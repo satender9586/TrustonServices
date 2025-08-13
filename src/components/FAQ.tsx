@@ -35,7 +35,7 @@ const FAQ = () => {
                  { "Q" + ")"+ " "}{ title}
                 </AccordionTrigger>
                 <AccordionContent>
-                  <p className="text-start text-sm sm:text-[16px] tracking-wide font-serif text-gray-600 leading-snug sm:leading-relaxed">
+                  <p className="text-start tracking-wide text-sm text-gray-600  space-y-1 leading-snug sm:leading-relaxed">
                     {desc}
                   </p>
                 </AccordionContent>

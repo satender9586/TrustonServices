@@ -19,7 +19,7 @@ const FeedbackCard = () => {
       </div>
 
       {/* Testimonial Text */}
-      <p className="text-[15.5px] text-gray-600 dark:text-gray-300 leading-relaxed font-serif tracking-tight mb-6 italic">
+      <p className="tracking-wide text-sm text-gray-600  space-y-1 leading-snug sm:leading-relaxed mb-6 italic">
         Years of experience gives us immense confidence in our work and quality.
         We provide the best repair services for air conditioners, refrigerators,
         washing machines, and other home appliances.

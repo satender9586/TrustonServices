@@ -41,22 +41,7 @@ export const ServicesItems: Service[] = [
       "Safe and efficient electrical repairs, fittings, and troubleshooting services.",
   
   },
-  {
-    itemname: "Salon & Parlor",
-    itemUrl: ELECTIMG,
-    path: "salon-parlor",
-    trending: false,
-    itemDesc: "Professional salon and beauty services at your doorstep.",
 
-  },
-  {
-    itemname: "Delivery",
-    itemUrl: ELECTIMG,
-    path: "delivery",
-    trending: false,
-    itemDesc: "Fast and reliable delivery services for packages and groceries.",
-   
-  },
 ];
 
 export const servicesIdData: Record<string, any> = {
@@ -176,6 +161,134 @@ export const servicesIdData: Record<string, any> = {
               "Leak check",
               "Gas refill with vacuuming",
               "Test cooling"
+            ],
+            img: PLUMBIMG
+          }
+        ]
+      }
+    ]
+  },
+
+  "washing-machine": {
+    title: "Washing Machine Repair & Service",
+    description:
+      "Expert repair and maintenance for top-load, front-load, and semi-automatic washing machines.",
+    image: WASHINGIMG,
+    categories: [
+      {
+        type: "Front Load",
+        services: [
+          {
+            name: "General Service (Front Load)",
+            price: "₹499",
+            features: [
+              "Drum cleaning & filter check",
+              "Check motor & belt",
+              "Test wash cycle"
+            ],
+            img: WASHINGIMG
+          },
+          {
+            name: "Installation (Front Load)",
+            price: "₹899",
+            features: [
+              "Level machine",
+              "Connect inlet & drain pipes",
+              "Test run"
+            ],
+            img: WASHINGIMG
+          },
+          {
+            name: "Uninstallation (Front Load)",
+            price: "₹699",
+            features: [
+              "Disconnect pipes & wiring",
+              "Drain water",
+              "Pack for relocation"
+            ],
+            img: WASHINGIMG
+          }
+        ]
+      },
+      {
+        type: "Top Load",
+        services: [
+          {
+            name: "General Service (Top Load)",
+            price: "₹399",
+            features: [
+              "Clean drum & filters",
+              "Check inlet valve & motor",
+              "Test spin cycle"
+            ],
+            img: WASHINGIMG
+          },
+          {
+            name: "Installation (Top Load)",
+            price: "₹799",
+            features: [
+              "Level & secure machine",
+              "Connect water inlet",
+              "Test wash cycle"
+            ],
+            img: WASHINGIMG
+          }
+        ]
+      }
+    ]
+  },
+
+  "plumbing": {
+    title: "Plumbing Services",
+    description:
+      "Reliable plumbing repairs and installations — taps, pipes, fittings, and more.",
+    image: PLUMBIMG,
+    categories: [
+      {
+        type: "Repairs",
+        services: [
+          {
+            name: "Leaky Tap Repair",
+            price: "₹249",
+            features: [
+              "Fix tap leakage",
+              "Replace washers if needed",
+              "Check water flow"
+            ],
+            img: PLUMBIMG
+          },
+          {
+            name: "Pipe Leakage Repair",
+            price: "₹399",
+            features: [
+              "Locate leakage",
+              "Seal or replace damaged section",
+              "Test water pressure"
+            ],
+            img: PLUMBIMG
+          }
+        ]
+      },
+      {
+        type: "Installations",
+        services: [
+          {
+            name: "New Tap Installation",
+            price: "₹199",
+            features: [
+              "Install tap at desired location",
+              "Connect to water supply",
+              "Check for leaks"
+            ],
+            img: PLUMBIMG
+          },
+          {
+            name: "Water Filter Installation",
+            price: "₹499",
+            features: [
+              "Install wall-mounted filter",
+              "Connect inlet/outlet pipes",
+              "Test water flow"
             ],
             img: PLUMBIMG
           }

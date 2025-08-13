@@ -67,3 +67,14 @@ export interface Service {
   path: string;
   trending:boolean,
 }
+
+
+export interface ServicesCategoryCardProps {
+  srv: {
+    img: string;
+    name: string;
+    price?: string;
+    features: string[];
+  };
+  j: number;
+}

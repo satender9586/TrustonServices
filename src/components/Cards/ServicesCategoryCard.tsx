@@ -1,21 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import { ServicesCategoryCardProps } from "@/types/landing";
 
-interface ServiceCardProps {
-  srv: {
-    img: string;
-    name: string;
-    price?: string;
-    features: string[];
-  };
-  j: number;
-}
 
-const ServicesCategoryCard: React.FC<ServiceCardProps> = ({ srv }) => {
+const ServicesCategoryCard: React.FC<ServicesCategoryCardProps> = ({ srv }) => {
   return (
     <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg hover:scale-[1.02] transition-all duration-300 hover:-translate-y-2 flex flex-col">
-
-      {/* Image with Price Badge */}
       <div className="relative h-44 w-full bg-white">
         <Image
           src={srv.img}
@@ -33,7 +23,6 @@ const ServicesCategoryCard: React.FC<ServiceCardProps> = ({ srv }) => {
         )}
       </div>
 
-      {/* Content */}
       <div className="p-5 flex flex-col flex-grow">
         <h3 className="text-lg font-semibold text-gray-900 mb-3">{srv.name}</h3>
 
@@ -43,7 +32,6 @@ const ServicesCategoryCard: React.FC<ServiceCardProps> = ({ srv }) => {
           ))}
         </ul>
 
-        {/* Button */}
         <div className="mt-auto">
           <button className="w-full bg-gradient-to-r from-[#AF0D5A] to-[#92094A] text-white px-4 py-2 rounded-lg text-sm font-semibold hover:opacity-90 transition-all shadow-md">
             Book Now

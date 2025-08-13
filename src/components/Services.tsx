@@ -7,7 +7,6 @@ import WithTrandingLableServiceCard from "@/HOC/WithTrandingLableServiceCard";
 const Services = () => {
   const ServiceItemCardWithLabel =  WithTrandingLableServiceCard(ServiceItemCard);
 
-
   return (
     <section className="bg-gradient-to-b from-[#EBF7FD] via-white to-[#FDEBF3]  py-5 sm:py-8">
       <div className="container mx-auto px-4 sm:px-10 pb-4">
