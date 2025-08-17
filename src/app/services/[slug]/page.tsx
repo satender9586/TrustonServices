@@ -43,21 +43,22 @@ const ServiceItem = () => {
 
   return (
     <Layout>
-      <section className="bg-gradient-to-br from-[#EBF7FD] via-white to-[#FDEBF3]">
-        <div className="relative h-72 sm:h-96 w-full mt-7 md:mt-0">
+      <section className="bg-gradient-to-br from-[#EBF7FD] via-white to-[#FDEBF3] pt-10 sm:pt-10 md:pt-17 ">
+        <div className="relative h-35 sm:h-50 md:h-70 w-full mt-7 md:mt-0 ">
           <Image
             src={service.image}
             alt={service.title}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-center"
             fill
             sizes="(max-width: 768px) 100vw, 33vw"
             priority={false}
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70 flex flex-col justify-center items-center text-center text-white px-4">
-            <h1 className="text-3xl sm:text-4xl font-serif font-semibold mb-3 tracking-wide drop-shadow-sm">
+            <h1 className="text-xl sm:text-4xl  font-semibold mb-3 tracking-wide drop-shadow-sm">
               {service.title}
             </h1>
-            <p className="text-sm sm:text-base md:text-lg tracking-wide leading-relaxed text-center px-4 md:px-9">
+            <p className="hidden md:block text-sm sm:text-base md:text-lg tracking-wide leading-relaxed text-center px-4 md:px-9">
               {service.description}
             </p>
           </div>

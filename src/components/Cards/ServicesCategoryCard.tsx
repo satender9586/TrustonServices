@@ -33,7 +33,7 @@ const ServicesCategoryCard: React.FC<ServicesCategoryCardProps> = ({ srv }) => {
         </ul>
 
         <div className="mt-auto">
-          <button className="w-full bg-gradient-to-r from-[#AF0D5A] to-[#92094A] text-white px-4 py-2 rounded-lg text-sm font-semibold hover:opacity-90 transition-all shadow-md">
+          <button disabled className=" w-full bg-gradient-to-r from-[#AF0D5A] to-[#92094A] text-white px-4 py-2 rounded-lg text-sm font-semibold hover:opacity-90 transition-all shadow-md">
             Book Now
           </button>
         </div>

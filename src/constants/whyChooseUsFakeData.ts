@@ -23,7 +23,7 @@ export const whyChooseUsData: WhyChooseUsItem[] = [
   {
     icon: GrUserManager,
     title: "Quick Response Time",
-    desc: "Fast and on-time service right at your doorstep."
+    desc: "Fast and on-time service. Always right at your doorstep."
   },
   {
     icon: GrUserManager,

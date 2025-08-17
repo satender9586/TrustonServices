@@ -3,6 +3,7 @@ import WASHINGIMG from "../assests/washing.jpg";
 import PLUMBIMG from "../assests/plumber.jpg";
 import ELECTIMG from "../assests/electrician.jpg";
 import { Service } from "@/types/landing";
+import acBanner from "../assests/ac-banner.jpg"
 
 export const ServicesItems: Service[] = [
   {
@@ -49,7 +50,7 @@ export const servicesIdData: Record<string, any> = {
     title: "Air Conditioner Repair & Service",
     description:
       "Professional doorstep services for Split & Window ACs — maintenance, installation, gas filling, and more.",
-    image: WASHINGIMG,
+    image: acBanner,
     categories: [
       {
         type: "Split AC",
@@ -291,6 +292,75 @@ export const servicesIdData: Record<string, any> = {
               "Test water flow"
             ],
             img: PLUMBIMG
+          }
+        ]
+      }
+    ]
+  },
+
+  "electrician": {
+    title: "Electrician Services",
+    description:
+      "Expert electrician services for wiring, installations, repairs, and safety checks.",
+    image: ELECTIMG, 
+    categories: [
+      {
+        type: "Repairs",
+        services: [
+          {
+            name: "Switch/Socket Repair",
+            price: "₹199",
+            features: [
+              "Repair or replace faulty switches",
+              "Check wiring connections",
+              "Ensure safe operation"
+            ],
+            img: ELECTIMG
+          },
+          {
+            name: "Fan Repair",
+            price: "₹299",
+            features: [
+              "Fix ceiling/pedestal fan issues",
+              "Check capacitor & motor",
+              "Ensure smooth operation"
+            ],
+            img: ELECTIMG
+          }
+        ]
+      },
+      {
+        type: "Installations",
+        services: [
+          {
+            name: "New Switchboard Installation",
+            price: "₹499",
+            features: [
+              "Install modern switchboard",
+              "Proper wiring & connections",
+              "Safety checks included"
+            ],
+            img: ELECTIMG
+          },
+          {
+            name: "Ceiling Fan Installation",
+            price: "₹399",
+            features: [
+              "Mount ceiling fan securely",
+              "Connect wiring",
+              "Balance blades & test"
+            ],
+            img: ELECTIMG
+          },
+          {
+            name: "Tube Light/LED Installation",
+            price: "₹199",
+            features: [
+              "Install LED/tube lights",
+              "Connect wiring",
+              "Check proper lighting"
+            ],
+            img: ELECTIMG
           }
         ]
       }

@@ -2,7 +2,6 @@ import BrijeshImg from "../assests/users/BrijeshImg.jpeg"
 import AyushImg from "../assests/users/aysh.jpeg"
 import sourabTechImg from "../assests/users/sourabTech.jpeg"
 import NakulImg from "../assests/users/nakul.jpeg"
-import { StaticImageData } from "next/image";
 import {OwnerInfo,TeamMembersInfo} from "../types/landing"
 
 

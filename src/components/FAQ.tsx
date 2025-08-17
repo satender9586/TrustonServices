@@ -15,7 +15,7 @@ const FAQ = () => {
             Frequently Asked Questions
           </h2>
 
-          <p className="text-[15px] font-serif tracking-wide sm:text-[16px] text-[#555] leading-relaxed ">
+          <p className="text-[15px]  tracking-wide sm:text-[16px] text-[#747474] leading-relaxed ">
             Find answers to commonly asked questions about Long Term Mentorship
           </p>
         </div>

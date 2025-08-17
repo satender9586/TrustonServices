@@ -12,11 +12,11 @@ const WhyChoose = () => {
             Why Choose Us
           </h2>
 
-          <p className=" md:hidden text-[14px] font-serif sm:text-[15px] md:text-[16px] tracking-wide text-[#555] leading-relaxed text-center px-9 sm:px-4">
+          <p className=" md:hidden text-[14px]  sm:text-[15px] md:text-[16px] tracking-wide text-[#747474] leading-relaxed text-center px-9 sm:px-4">
             5+ years of trusted appliance repair services in Delhi NCR.
           </p>
 
-          <p className="hidden sm:block text-[15px] font-serif tracking-wide sm:text-[16px] text-[#555] leading-relaxed ">
+          <p className="hidden sm:block text-[15px]  tracking-wide sm:text-[16px] text-[#747474] leading-relaxed ">
             At <span className="text-[#AF0D5A] font-semibold">Trust On Services</span>, we deliver 
             <strong> fast, reliable, and affordable </strong> AC, washing machine, and refrigerator repairs.  
             With over <strong>5 years of experience</strong>

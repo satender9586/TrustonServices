@@ -18,14 +18,14 @@ const AboutUs = () => {
         </h2>
 
         {/* Description */}
-        <p className="md:hidden font-serif text-[15px] sm:text-lg text-[#555] leading-relaxed max-w-3xl mx-auto mb-10">
+        <p className="md:hidden  text-[15px] sm:text-lg text-[#747474] leading-relaxed max-w-3xl mx-auto mb-10">
           At{" "}
           <span className="text-[#AF0D5A] font-semibold">
             Trust On Services
           </span>
           , we provide expert repair, installation, and maintenance
         </p>
-        <p className="hidden font-serif md:block text-[15px] tracking-wide sm:text-[16px] text-[#555] leading-relaxed mb-6">
+        <p className="hidden  md:block text-[15px] tracking-wide sm:text-[16px] text-[#747474] leading-relaxed mb-6">
           At{" "}
           <span className="text-[#AF0D5A] font-semibold">
             Trust On Services

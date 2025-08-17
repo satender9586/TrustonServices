@@ -16,19 +16,18 @@ const Services = () => {
             <span className="hidden md:inline-block">for Delhi NCR</span>
           </h2>
 
-          <p className="block md:hidden font-serif text-[14px] sm:text-[15px] md:text-[16px] tracking-wide text-gray-800 leading-relaxed text-center px-9 sm:px-4">
+          <p className="block md:hidden  text-[14px] sm:text-[15px] md:text-[16px] tracking-wide text-[#747474] leading-relaxed text-center px-9 sm:px-4">
             Reliable AC, fridge & washing machine service right at your doorstep
             in Delhi NCR.
           </p>
 
-          <p className="hidden sm:block font-serif text-[15px] tracking-wide sm:text-[16px] text-[#555] leading-relaxed ">
+          <p className="hidden sm:block  text-[15px] tracking-wide sm:text-[16px] text-[#747474] leading-relaxed md:px-4">
             Welcome to{" "}
             <span className="text-[#AF0D5A] font-semibold">
               Trust On Services
             </span>{" "}
             — your go-to choice for reliable AC, washing machine, and
-            refrigerator repairs across Delhi NCR. Fast, professional, and
-            delivered right to your doorstep.
+            refrigerator repairs across Delhi NCR. Fast,
           </p>
         </div>
 
