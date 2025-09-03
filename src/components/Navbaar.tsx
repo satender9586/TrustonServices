@@ -5,6 +5,7 @@ import { IoMdMenu, IoMdClose } from "react-icons/io";
 import Logo from "../assests/Logo2.png";
 import Image from "next/image";
 import Link from "next/link";
+import { MobileMenuProps } from "@/types/mobileNavbaar";
 
 const Navbaar = () => {
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -27,7 +28,7 @@ const Navbaar = () => {
       }`}
     >
       <div className="container mx-auto px-4 md:px-10 h-17 flex items-center justify-between">
-        {/* Logo */}
+       <Link href={"/"}>
         <div className="flex items-center gap-2">
           <Image
             src={Logo}
@@ -44,7 +45,7 @@ const Navbaar = () => {
           </div>
         </div>
 
-        {/* Desktop Navbar */}
+       </Link>
         <nav className="hidden sm:flex items-center gap-6 text-[15px] font-medium">
           {NAVBAR_TABS.map(({ PATH, TABNAME }) => (
             <Link href={PATH} key={TABNAME}>
@@ -57,7 +58,6 @@ const Navbaar = () => {
           ))}
         </nav>
 
-        {/* Desktop Auth Buttons */}
         <div className="hidden sm:flex gap-3">
           <button className="px-5 py-1 rounded-full font-serif text-[#AF0D5A] border border-[#AF0D5A] hover:bg-[#AF0D5A] hover:text-white transition-all duration-300">
             Login
@@ -67,7 +67,6 @@ const Navbaar = () => {
           </button>
         </div>
 
-       
         <div className="sm:hidden">
           <button
             onClick={toggleMobileMenu}
@@ -78,7 +77,6 @@ const Navbaar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu Overlay */}
       <MobileMenu
         isOpen={isMobileMenuOpen}
         toggleMenu={toggleMobileMenu}
@@ -90,25 +88,14 @@ const Navbaar = () => {
 
 export default Navbaar;
 
-
-
-
-
-// Define props type
-interface MobileMenuProps {
-  isOpen: boolean;
-  toggleMenu: () => void;
-  tabs: { PATH: string; TABNAME: string }[];
-}
-
-const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu, tabs }) => {
+const MobileMenu: React.FC<MobileMenuProps> = ({isOpen, toggleMenu,tabs}) => {
   return (
     <div
       className={`fixed top-0 left-0 w-full h-full z-[998] flex flex-col items-center justify-center gap-8 
       backdrop-blur-lg bg-[#EBF7FD]/90 transition-all duration-500 ease-in-out
       ${isOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full"}`}
     >
-      {/* Close Button */}
+
       <button
         onClick={toggleMenu}
         className="absolute top-5 right-6 text-[32px] text-[#111] hover:text-[#AF0D5A] transition-colors"
@@ -116,7 +103,6 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu, tabs }) => 
         <IoMdClose />
       </button>
 
-      {/* Navigation Tabs */}
       <ul className="flex flex-col items-center gap-6 text-xl font-medium">
         {tabs.map(({ PATH, TABNAME }) => (
           <Link href={PATH} key={TABNAME} onClick={toggleMenu}>
@@ -130,7 +116,6 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu, tabs }) => 
         ))}
       </ul>
 
-      {/* Auth Buttons for Mobile */}
       <div className="flex flex-col gap-4 mt-8 w-[70%]">
         <button className="w-full px-5 py-2 rounded-full font-serif text-[#AF0D5A] border border-[#AF0D5A] hover:bg-[#AF0D5A] hover:text-white transition-all duration-300">
           Login
@@ -142,5 +127,3 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu, tabs }) => 
     </div>
   );
 };
-
-
