@@ -4,14 +4,14 @@ import React from 'react'
 
 const TeamSection = () => {
   return (
-    <section className="pb-0 md:pb-10 overflow-hidden">
+    <section className="pb-0 md:pb-6 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center relative z-10">
         {/* Team cards */}
-        <div className="grid gap-4 sm:gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+        <div className="grid gap-4 sm:gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-4  md:py-4">
           {teamMembers.map((member, idx) => (
             <div
               key={idx}
-              className="group p-4 sm:p-5 bg-white border border-gray-100 rounded-[20px] sm:rounded-[24px] shadow-md hover:shadow-xl hover:-translate-y-2 sm:hover:-translate-y-3 hover:border-[#AF0D5A] transition-all duration-300 flex flex-col items-center"
+              className="group  p-4 sm:p-5 bg-white border border-gray-100 rounded-[20px] sm:rounded-[24px] shadow-md hover:shadow-xl hover:-translate-y-2 sm:hover:-translate-y-3 hover:border-[#AF0D5A] transition-all duration-300 flex flex-col items-center"
             >
               {/* Profile image */}
               <div className="relative w-full h-70 sm:h-60 overflow-hidden rounded-xl mb-3">
@@ -39,7 +39,7 @@ const TeamSection = () => {
               </p>
 
               {/* Description */}
-              <p className="tracking-wide text-sm text-gray-600  space-y-1 leading-snug sm:leading-relaxed">
+              <p className="tracking-wide  text-sm text-gray-600  space-y-1 leading-snug sm:leading-relaxed">
                 {member.desc}
               </p>
             </div>

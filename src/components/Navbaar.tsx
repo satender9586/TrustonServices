@@ -28,24 +28,23 @@ const Navbaar = () => {
       }`}
     >
       <div className="container mx-auto px-4 md:px-10 h-17 flex items-center justify-between">
-       <Link href={"/"}>
-        <div className="flex items-center gap-2">
-          <Image
-            src={Logo}
-            alt="TrustOnServices logo"
-            className="w-8 sm:w-10 h-auto object-contain"
-          />
-          <div className="leading-tight">
-            <h1 className="text-[16px] sm:text-[19px] font-bold text-[#111828]">
-              TrustOn<span className="text-[#AF0D5A]">Services</span>
-            </h1>
-            <p className="text-[9px] sm:text-[10px] font-serif text-[#555] font-medium">
-              Happy customers, happy us!
-            </p>
+        <Link href={"/"}>
+          <div className="flex items-center gap-2">
+            <Image
+              src={Logo}
+              alt="TrustOnServices logo"
+              className="w-8 sm:w-10 h-auto object-contain"
+            />
+            <div className="leading-tight">
+              <h1 className="text-[16px] sm:text-[19px] font-bold text-[#111828]">
+                TrustOn<span className="text-[#AF0D5A]">Services</span>
+              </h1>
+              <p className="text-[9px] sm:text-[10px] font-serif text-[#555] font-medium">
+                Happy customers, happy us!
+              </p>
+            </div>
           </div>
-        </div>
-
-       </Link>
+        </Link>
         <nav className="hidden sm:flex items-center gap-6 text-[15px] font-medium">
           {NAVBAR_TABS.map(({ PATH, TABNAME }) => (
             <Link href={PATH} key={TABNAME}>
@@ -58,14 +57,14 @@ const Navbaar = () => {
           ))}
         </nav>
 
-        <div className="hidden sm:flex gap-3">
+        {/* <div className="hidden sm:flex gap-3">
           <button className="px-5 py-1 rounded-full font-serif text-[#AF0D5A] border border-[#AF0D5A] hover:bg-[#AF0D5A] hover:text-white transition-all duration-300">
             Login
           </button>
           <button className="px-5 py-2 rounded-full font-serif bg-gradient-to-r from-[#AF0D5A] to-[#e63e91] text-white shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
             Sign Up
           </button>
-        </div>
+        </div> */}
 
         <div className="sm:hidden">
           <button
@@ -88,14 +87,17 @@ const Navbaar = () => {
 
 export default Navbaar;
 
-const MobileMenu: React.FC<MobileMenuProps> = ({isOpen, toggleMenu,tabs}) => {
+const MobileMenu: React.FC<MobileMenuProps> = ({
+  isOpen,
+  toggleMenu,
+  tabs,
+}) => {
   return (
     <div
       className={`fixed top-0 left-0 w-full h-full z-[998] flex flex-col items-center justify-center gap-8 
       backdrop-blur-lg bg-[#EBF7FD]/90 transition-all duration-500 ease-in-out
       ${isOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full"}`}
     >
-
       <button
         onClick={toggleMenu}
         className="absolute top-5 right-6 text-[32px] text-[#111] hover:text-[#AF0D5A] transition-colors"
@@ -116,14 +118,14 @@ const MobileMenu: React.FC<MobileMenuProps> = ({isOpen, toggleMenu,tabs}) => {
         ))}
       </ul>
 
-      <div className="flex flex-col gap-4 mt-8 w-[70%]">
+      {/* <div className="flex flex-col gap-4 mt-8 w-[70%]">
         <button className="w-full px-5 py-2 rounded-full font-serif text-[#AF0D5A] border border-[#AF0D5A] hover:bg-[#AF0D5A] hover:text-white transition-all duration-300">
           Login
         </button>
         <button className="w-full px-5 py-2 rounded-full font-serif bg-gradient-to-r from-[#AF0D5A] to-[#e63e91] text-white shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
           Sign Up
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };

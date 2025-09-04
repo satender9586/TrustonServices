@@ -10,7 +10,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-b from-[#EBF7FD] via-white to-[#FDEBF3] py-10 sm:py-16 overflow-hidden">
+    <section className="bg-gradient-to-b from-[#EBF7FD] via-white to-[#FDEBF3] py-5 sm:py-8 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-10 text-center max-w-5xl">
         {/* Heading */}
         <h2 className="text-[24px] sm:text-4xl md:leading-12  tracking-[1.5px] md:tracking-[2px] md:font-semibold text-[#AF0D5A] mb-2 md:mb-2">

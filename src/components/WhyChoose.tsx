@@ -1,5 +1,5 @@
 import React from 'react';
-import { whyChooseUsData } from '@/constants/whyChooseUsFakeData';
+import { whyChooseUsData } from '@/constants/WhyChooseUsFakeData';
 import { WhyChooseUsCrausel } from './WhyChooseUsCrausel';
 
 const WhyChoose = () => {

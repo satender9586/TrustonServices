@@ -1,11 +1,7 @@
 import { GrUserManager } from "react-icons/gr";
 import { WhyChooseUsItem,CompanyLovesItem } from "@/types/landing";
 import lgImg from "../assests/lg.png"
-import panasonicImg from "../assests/panasonic.png"
-import daikinImg from "../assests/daikin.png"
-import godrejImg from "../assests/godrej.png"
-import wirepoolImg from "../assests/wirepool.png"
-import samasung from "../assests/samsung.png"
+
 
 
 
@@ -14,7 +10,7 @@ export const whyChooseUsData: WhyChooseUsItem[] = [
     icon: GrUserManager,
     title: "Expert Technicians",
     desc: "Certified professionals with deep technical expertise."
-  },
+  },  
   {
     icon: GrUserManager,
     title: "5+ Years of Experience",
