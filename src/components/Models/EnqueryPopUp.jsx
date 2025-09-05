@@ -1,4 +1,4 @@
-"use client"
+  "use client"
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
@@ -42,7 +42,7 @@ const EnqueryPopUp = ({children}) => {
           }
         </DialogTrigger>
 
-        <DialogContent className="sm:max-w-[500px] bg-white rounded-xl p-6 shadow-2xl border border-gray-200">
+        <DialogContent className="sm:max-w-[500px] bg-white rounded-xl p-6 shadow-2xl border border-gray-200 z-[1000]">
           <DialogHeader>
             <DialogTitle className="text-2xl font-bold text-[#AF0D5A] text-center">
               Service Enquiry

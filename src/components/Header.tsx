@@ -6,7 +6,7 @@ import {
   FaThermometerHalf,
 } from "react-icons/fa";
 import { FaStar } from "react-icons/fa6";
-import EnqueryPopUp from "../components/EnqueryPopUp";
+import EnqueryPopUp from "./Models/EnqueryPopUp";
 
 const Header = () => {
   return (

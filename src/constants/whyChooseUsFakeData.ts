@@ -1,42 +1,41 @@
-import { GrUserManager } from "react-icons/gr";
+
 import { WhyChooseUsItem,CompanyLovesItem } from "@/types/landing";
 import lgImg from "../assests/lg.png"
-
-
-
+import { FaUserTie, FaClock, FaHandshake, FaRupeeSign, FaTools, FaAward } from "react-icons/fa";
 
 export const whyChooseUsData: WhyChooseUsItem[] = [
   {
-    icon: GrUserManager,
+    icon: FaUserTie,
     title: "Expert Technicians",
     desc: "Certified professionals with deep technical expertise."
   },  
   {
-    icon: GrUserManager,
+    icon: FaAward,
     title: "5+ Years of Experience",
     desc: "Trusted by thousands across Delhi NCR since 2019."
   },
   {
-    icon: GrUserManager,
+    icon: FaClock,
     title: "Quick Response Time",
     desc: "Fast and on-time service. Always right at your doorstep."
   },
   {
-    icon: GrUserManager,
+    icon: FaHandshake,
     title: "Customer-Centric Approach",
     desc: "We prioritize your satisfaction in every service we provide."
   },
   {
-    icon: GrUserManager,
+    icon: FaRupeeSign,
     title: "Affordable Pricing",
     desc: "High-quality service without breaking your budget."
   },
   {
-    icon: GrUserManager,
+    icon: FaTools,
     title: "Complete Home Solutions",
     desc: "One-stop repair services for ACs, washing machines, and more."
   }
 ];
+  
 
 export const companiesLovesData: CompanyLovesItem[] = [
   {

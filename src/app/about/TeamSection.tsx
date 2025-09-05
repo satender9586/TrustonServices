@@ -8,10 +8,10 @@ const TeamSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center relative z-10">
         {/* Team cards */}
         <div className="grid gap-4 sm:gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-4  md:py-4">
-          {teamMembers.map((member, idx) => (
+          {teamMembers?.map((member, idx) => (
             <div
               key={idx}
-              className="group  p-4 sm:p-5 bg-white border border-gray-100 rounded-[20px] sm:rounded-[24px] shadow-md hover:shadow-xl hover:-translate-y-2 sm:hover:-translate-y-3 hover:border-[#AF0D5A] transition-all duration-300 flex flex-col items-center"
+              className="group  p-4 sm:p-3 bg-white border border-gray-100 rounded-[20px] sm:rounded-[24px] shadow-md hover:shadow-xl hover:-translate-y-2 sm:hover:-translate-y-3 hover:border-[#AF0D5A] transition-all duration-300 flex flex-col items-center"
             >
               {/* Profile image */}
               <div className="relative w-full h-70 sm:h-60 overflow-hidden rounded-xl mb-3">
@@ -34,7 +34,7 @@ const TeamSection = () => {
               </p>
 
               {/* Experience */}
-              <p className="text-xs sm:text-sm font-sans text-gray-600 mb-3">
+              <p className="text-xs sm:text-sm font-sans text-gray-600 mb-2">
                 {member.experience} Experience
               </p>
 

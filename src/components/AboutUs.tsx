@@ -1,6 +1,6 @@
 import React from "react";
 import { FaTools, FaCertificate, FaHeadset } from "react-icons/fa";
-import EnqueryPopUp from "./EnqueryPopUp";
+import EnqueryPopUp from "./Models/EnqueryPopUp";
 
 const AboutUs = () => {
   const stats = [
