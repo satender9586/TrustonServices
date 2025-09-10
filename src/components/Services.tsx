@@ -2,7 +2,7 @@ import React from "react";
 import { ServicesItems } from "../constants/ServicesFakeData";
 import ServiceItemCard from "./Cards/ServiceItemCard";
 import Link from "next/link";
-import WithTrandingLableServiceCard from "@/HOC/WithTrandingLableServiceCard";
+import WithTrandingLableServiceCard from "@/hoc/WithTrandingLableServiceCard";
 
 const Services = () => {
   const ServiceItemCardWithLabel =  WithTrandingLableServiceCard(ServiceItemCard);
